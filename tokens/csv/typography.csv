@@ -1,0 +1,56 @@
+token-name,font_family,font_size,font_weight,line_height,letter_spacing,text_decoration,text_transform,type,description,category,status,version,tags,platform,usage
+heading.hero,"Roboto Flex, system-ui",48px,700,1.2,0,normal,none,typography.heading.hero,Largest heading style for impactful hero sections and main page titles,typography,active,1.0.0,heading hero,web,Hero sections and main landing pages
+heading.display,"Roboto Flex, system-ui",36px,600,1.3,0,normal,none,typography.heading.display,Large display heading for featured content and section introductions,typography,active,1.0.0,heading display,web,Featured sections and marketing content
+heading.h1,"Roboto Flex, system-ui",24px,600,1.4,0,normal,none,typography.heading.h1,Primary heading for page sections and article titles,typography,active,1.0.0,heading h1,web,Main content sections and article titles
+heading.h2,"Roboto Flex, system-ui",20px,600,1.4,0,normal,none,typography.heading.h2,Secondary heading for subsections and content grouping,typography,active,1.0.0,heading h2,web,Subsections and content groups
+heading.h3,"Roboto Flex, system-ui",18px,600,1.4,0,normal,none,typography.heading.h3,Tertiary heading for content organization within sections,typography,active,1.0.0,heading h3,web,Content organization within sections
+heading.h4,"Roboto Flex, system-ui",16px,600,1.4,0,normal,none,typography.heading.h4,Quaternary heading for detailed content structure,typography,active,1.0.0,heading h4,web,Detailed content structure
+heading.h5,"Roboto Flex, system-ui",14px,600,1.4,0,normal,none,typography.heading.h5,Fifth-level heading for nested content hierarchies,typography,active,1.0.0,heading h5,web,Nested content hierarchies
+heading.h6,"Roboto Flex, system-ui",12px,600,1.4,0,normal,none,typography.heading.h6,Smallest heading level for deep content nesting,typography,active,1.0.0,heading h6,web,Deep content nesting
+body.large,"Roboto Flex, system-ui",18px,400,1.5,0,normal,none,typography.body.large,Large body text for enhanced readability and emphasis,typography,active,1.0.0,body large,web,Lead paragraphs and emphasized content
+body.regular,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.body.regular,Standard body text for main content areas,typography,active,1.0.0,body regular,web,Main content and paragraphs
+body.small,"Roboto Flex, system-ui",14px,400,1.5,0,normal,none,typography.body.small,Small body text for secondary information,typography,active,1.0.0,body small,web,Secondary content and supporting text
+body.tiny,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.body.tiny,Smallest body text for auxiliary information,typography,active,1.0.0,body tiny,web,Footnotes and auxiliary content
+interactive.link,"Roboto Flex, system-ui",16px,400,1.5,0,underline,none,typography.interactive.link,Hyperlink text style with underline decoration,typography,active,1.0.0,interactive link,web,Clickable links and navigation elements
+interactive.button,"Roboto Flex, system-ui",16px,600,1.2,0.5px,normal,uppercase,typography.interactive.button,Button text style with emphasis and spacing,typography,active,1.0.0,interactive button,web,Button labels and call-to-actions
+interactive.nav,"Roboto Flex, system-ui",14px,500,1.4,0.2px,normal,none,typography.interactive.nav,Navigation menu text style,typography,active,1.0.0,interactive nav,web,Navigation menus and links
+interactive.menu,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.interactive.menu,Dropdown and menu item text style,typography,active,1.0.0,interactive menu,web,Dropdown menus and navigation items
+form.label,"Roboto Flex, system-ui",14px,500,1.4,0,normal,none,typography.form.label,Form field label text style,typography,active,1.0.0,form label,web,Form field labels
+form.input,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.form.input,Form input field text style,typography,active,1.0.0,form input,web,Form input fields
+form.placeholder,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.form.placeholder,Placeholder text style for form inputs,typography,active,1.0.0,form placeholder,web,Input field placeholders
+form.helper,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.form.helper,Helper text style for form fields,typography,active,1.0.0,form helper,web,Form field help text
+form.error,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.form.error,Error message text style for form validation,typography,active,1.0.0,form error,web,Form validation error messages
+component.card.title,"Roboto Flex, system-ui",18px,600,1.3,0,normal,none,typography.component.card.title,Card component title text style,typography,active,1.0.0,component card,web,Card titles and headers
+component.card.body,"Roboto Flex, system-ui",14px,400,1.5,0,normal,none,typography.component.card.body,Card component body text style,typography,active,1.0.0,component card,web,Card content and descriptions
+component.modal.title,"Roboto Flex, system-ui",20px,600,1.3,0,normal,none,typography.component.modal.title,Modal dialog title text style,typography,active,1.0.0,component modal,web,Modal dialog headers
+component.modal.body,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.component.modal.body,Modal dialog body text style,typography,active,1.0.0,component modal,web,Modal dialog content
+component.tooltip,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.component.tooltip,Tooltip text style for help content,typography,active,1.0.0,component tooltip,web,Tooltips and help text
+data.table.header,"Roboto Flex, system-ui",14px,600,1.4,0.2px,normal,none,typography.data.table.header,Table header text style,typography,active,1.0.0,data table,web,Table column headers
+data.table.body,"Roboto Flex, system-ui",14px,400,1.5,0,normal,none,typography.data.table.body,Table body text style,typography,active,1.0.0,data table,web,Table cell content
+data.metric,"Roboto Flex, system-ui",24px,600,1.2,0,normal,none,typography.data.metric,Large number and metric display style,typography,active,1.0.0,data metric,web,Statistics and key metrics
+feedback.loading,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.feedback.loading,Loading state text style,typography,active,1.0.0,feedback loading,web,Loading indicators
+feedback.error,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.feedback.error,Error message text style,typography,active,1.0.0,feedback error,web,Error messages and alerts
+feedback.success,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.feedback.success,Success message text style,typography,active,1.0.0,feedback success,web,Success messages and confirmations
+status.success,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.status.success,Success status message text style,typography,active,1.0.0,status success,web,Success notifications and confirmations
+status.error,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.status.error,Error status message text style,typography,active,1.0.0,status error,web,Error notifications and alerts
+status.warning,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.status.warning,Warning status message text style,typography,active,1.0.0,status warning,web,Warning notifications and alerts
+status.info,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.status.info,Information status message text style,typography,active,1.0.0,status info,web,Information notifications
+component.badge,"Roboto Flex, system-ui",12px,600,1.2,0,normal,none,typography.component.badge,Badge and tag text style,typography,active,1.0.0,component badge,web,Badges and status indicators
+component.alert,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.component.alert,Alert message text style,typography,active,1.0.0,component alert,web,Alert messages and notifications
+data.list.title,"Roboto Flex, system-ui",16px,600,1.3,0,normal,none,typography.data.list.title,List section title text style,typography,active,1.0.0,data list,web,List section headers
+data.list.item,"Roboto Flex, system-ui",14px,400,1.5,0,normal,none,typography.data.list.item,List item text style,typography,active,1.0.0,data list,web,List items and content
+data.label,"Roboto Flex, system-ui",12px,500,1.4,0,normal,none,typography.data.label,Data label text style,typography,active,1.0.0,data label,web,Data point labels and captions
+nav.main,"Roboto Flex, system-ui",16px,500,1.4,0,normal,none,typography.nav.main,Main navigation text style,typography,active,1.0.0,nav main,web,Primary navigation items
+nav.sub,"Roboto Flex, system-ui",14px,400,1.4,0,normal,none,typography.nav.sub,Sub-navigation text style,typography,active,1.0.0,nav sub,web,Secondary navigation items
+nav.breadcrumb,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.nav.breadcrumb,Breadcrumb navigation text style,typography,active,1.0.0,nav breadcrumb,web,Breadcrumb navigation links
+nav.sidebar,"Roboto Flex, system-ui",14px,500,1.4,0,normal,none,typography.nav.sidebar,Sidebar navigation text style,typography,active,1.0.0,nav sidebar,web,Sidebar navigation items
+nav.footer,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.nav.footer,Footer navigation text style,typography,active,1.0.0,nav footer,web,Footer navigation links
+a11y.screen-reader,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.a11y.screen-reader,Screen reader only text style,typography,active,1.0.0,a11y screen-reader,web,Screen reader accessible content
+a11y.required,"Roboto Flex, system-ui",14px,600,1.4,0,normal,none,typography.a11y.required,Required field indicator text style,typography,active,1.0.0,a11y required,web,Required field indicators
+a11y.optional,"Roboto Flex, system-ui",12px,400,1.4,0,normal,none,typography.a11y.optional,Optional field indicator text style,typography,active,1.0.0,a11y optional,web,Optional field indicators
+responsive.mobile,"Roboto Flex, system-ui",14px,400,1.5,0,normal,none,typography.responsive.mobile,Mobile-specific text style,typography,active,1.0.0,responsive mobile,web,Mobile device typography
+responsive.tablet,"Roboto Flex, system-ui",15px,400,1.5,0,normal,none,typography.responsive.tablet,Tablet-specific text style,typography,active,1.0.0,responsive tablet,web,Tablet device typography
+responsive.desktop,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.responsive.desktop,Desktop-specific text style,typography,active,1.0.0,responsive desktop,web,Desktop device typography
+theme.light,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.theme.light,Light theme text style,typography,active,1.0.0,theme light,web,Light theme typography
+theme.dark,"Roboto Flex, system-ui",16px,400,1.5,0,normal,none,typography.theme.dark,Dark theme text style,typography,active,1.0.0,theme dark,web,Dark theme typography
+theme.high-contrast,"Roboto Flex, system-ui",16px,700,1.5,0,normal,none,typography.theme.high-contrast,High contrast theme text style,typography,active,1.0.0,theme high-contrast,web,High contrast theme typography

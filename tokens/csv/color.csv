@@ -1,0 +1,1828 @@
+token-name,description,value-light,value-dark,category,type,version,tags,platform,usage
+brand.primary,"- The main brand color that represents your identity
+- Should be distinctive and memorable
+- Used for primary actions and key UI elements
+- Should meet WCAG contrast requirements",#4ba64b,#000000,color,brand,1.0.0,primary color,web,"- Main call-to-action buttons
+- Primary navigation elements
+- Key interactive elements
+- Brand logo
+- Important highlights"
+brand.secondary,"- Supports the primary brand color
+- Creates visual hierarchy
+- Used for secondary actions
+- Should complement primary color",#000000,#000001,color,brand,1.0.1,secondary color,web,"- Secondary buttons
+- Alternative navigation elements
+- Supporting UI elements
+- Complementary to primary actions
+- Secondary highlights"
+brand.accent,"- Adds personality to the UI
+- Creates visual interest
+- Used sparingly for emphasis
+- Should be distinctive but not overwhelming","rgba(139, 69, 19, 1)  ","rgba(139, 69, 19, 1)  ",color,brand,1.0.2,accent color,web,"- Accent elements
+- Decorative highlights
+- Special features
+- Micro-interactions
+- Visual interest points"
+brand.tertiary,"- Provides additional color variation
+- Used for subtle emphasis
+- Creates depth in the UI
+- Should be subtle and supportive","rgba(139, 69, 19, 1)  ","rgba(139, 69, 19, 1)  ",color,brand,1.0.3,tertiary color,web,"- Tertiary actions
+- Background accents
+- Subtle highlights
+- Supporting decorative elements
+- Alternative emphasis"
+brand.neutral,"- Provides balance to brand colors
+- Used for non-branded elements
+- Creates visual hierarchy
+- Should be versatile and subtle","rgba(139, 69, 19, 1)  ","rgba(139, 69, 19, 1)  ",color,brand,1.0.4,neutral color,web,"- Text colors
+- Backgrounds
+- Borders
+- Dividers
+- Subtle UI elements"
+brand.success,"- Represents positive outcomes
+- Should be distinct from primary brand color
+- Used for success feedback
+- Should be accessible","rgba(139, 69, 19, 1)  ","rgba(139, 69, 19, 1)  ",color,brand,1.0.5,success color,web,"- Success states
+- Positive actions
+- Confirmation messages
+- Progress indicators
+- Achievement highlights"
+brand.error,"- Represents critical or error states
+- Should be attention-grabbing
+- Used for error feedback
+- Should be accessible","rgba(139, 69, 19, 1)  ","rgba(139, 69, 19, 1)  ",color,brand,1.0.6,error color,web,"- Error states
+- Warning messages
+- Critical actions
+- Delete buttons
+- Alert indicators"
+brand.warning,"- Represents cautionary states
+- Should be noticeable but not alarming
+- Used for warning feedback
+- Should be accessible","rgba(139, 69, 19, 1)  ",#000007,color,brand,1.0.7,warning color,web,"- Warning states
+- Cautionary messages
+- Attention indicators
+- Pending states
+- Temporary highlights"
+brand.info,"- Represents informational states
+- Should be clear and readable
+- Used for information feedback
+- Should be accessible",#4ba64b,#000008,color,brand,1.0.8,info color,web,"- Information states
+- Help messages
+- Tooltips
+- Guidance indicators
+- Status updates"
+brand.gradient,"- Creates visual interest
+- Adds depth to UI
+- Used for special sections
+- Should complement solid colors",#4ba64b,#000009,color,brand,1.0.9,gradient color,web,"- Hero sections
+- Feature highlights
+- Background effects
+- Decorative elements
+- Special sections"
+surface.background,"- The foundational background color
+- Should be neutral and non-distracting
+- Provides contrast for content
+- Must support long reading sessions",#4ba64b,#000010,color,surface,1.0.10,background color,web,"- Main page background
+- Application container
+- Primary content area
+- Default view background
+- Base layer of UI"
+surface.foreground,"- Contains primary content
+- Should contrast with background
+- Supports content readability
+- Must work with text colors",#4ba64b,#000011,color,surface,1.0.11,foreground color,web,"- Content area
+- Text containers
+- Input fields
+- Form elements
+- Interactive areas"
+surface.elevated,"- Creates visual hierarchy
+- Indicates interactive elements
+- Shows content grouping
+- Must have subtle elevation",#4ba64b,#000012,color,surface,1.0.12,elevated color,web,"- Cards
+- Floating elements
+- Raised panels
+- Elevated containers
+- Modal backgrounds"
+surface.overlay,"- Creates depth and focus
+- Supports modal interactions
+- Provides visual separation
+- Should be semi-transparent",#4ba64b,#000013,color,surface,1.0.13,overlay color,web,"- Modal backdrops
+- Dropdown backgrounds
+- Tooltip backgrounds
+- Context menus
+- Popover backgrounds"
+surface.card,"- Contains related content
+- Creates visual grouping
+- Supports content hierarchy
+- Should be distinct from background",#4ba64b,#000014,color,surface,1.0.14,card color,web,"- Card components
+- Content containers
+- Information panels
+- Feature highlights
+- Content blocks"
+surface.modal,"- Focuses user attention
+- Contains important content
+- Creates visual hierarchy
+- Must be clearly visible",#4ba64b,#000015,color,surface,1.0.15,modal color,web,"- Modal dialogs
+- Dialog boxes
+- Confirmation windows
+- Alert dialogs
+- Custom popups"
+surface.tooltip,"- Provides additional information
+- Should be subtle but readable
+- Supports user guidance
+- Must be temporary and non-intrusive",#4ba64b,#000016,color,surface,1.0.16,tooltip color,web,"    - Tooltips
+    - Help text
+    - Contextual information
+    - Hover states
+    - Information bubbles"
+surface.hover,"- Indicates interactivity
+- Provides feedback
+- Shows active states
+- Should be subtle",#4ba64b,#000017,color,surface,1.0.17,hover color,web,"- Interactive element hover states
+- List item hover
+- Menu item hover
+- Button hover
+- Card hover"
+surface.active,"- Shows current state
+- Indicates selection
+- Provides clear feedback
+- Must be distinct",#4ba64b,#000018,color,surface,1.0.18,active color,web,"- Selected items
+- Active states
+- Pressed buttons
+- Active navigation
+- Current selection"
+surface.disabled,"- Indicates non-interactivity
+- Shows unavailable states
+- Maintains visual hierarchy
+- Should be clearly inactive",#4ba64b,#000019,color,surface,1.0.19,disabled color,web,"- Disabled elements
+- Inactive states
+- Non-interactive areas
+- Read-only content
+- Unavailable features"
+surface.focus,"- Shows keyboard focus
+- Supports accessibility
+- Indicates current element
+- Must be clearly visible",#4ba64b,#000020,color,surface,1.0.20,focus color,web,"- Focused elements
+- Keyboard navigation
+- Selected inputs
+- Active form fields
+- Focused buttons"
+surface.divider,"- Creates visual separation
+- Organizes content
+- Improves readability
+- Should be subtle",#4ba64b,#000021,color,surface,1.0.21,divider color,web,"- Section dividers
+- List separators
+- Content boundaries
+- Visual separation
+- Group dividers"
+interactive.primary,"- Most important interactive elements
+- Should be prominent
+- Clear call-to-action
+- Must be easily identifiable",#4ba64b,#000022,color,interactive,1.0.22,primary color,web,"- Main action buttons
+- Primary navigation
+- Key interactive elements
+- Important links
+- Primary CTAs"
+interactive.primary.hover,"- Provides immediate feedback
+- Indicates interactivity
+- Should be noticeable but not jarring
+- Maintains brand consistency",#4ba64b,#000023,color,interactive,1.0.23,primary.hover color,web,"- Hover state for primary buttons
+- Mouse interaction feedback
+- Interactive element highlighting
+- Navigation hover states
+- Link hover effects"
+interactive.primary.active,"- Shows current interaction
+- Provides tactile feedback
+- Indicates selection
+- Must be distinct from hover",#4ba64b,#000024,color,interactive,1.0.24,primary.active color,web,"- Pressed button states
+- Active navigation items
+- Selected elements
+- Clicked states
+- Active form elements"
+interactive.primary.disabled,"- Clearly shows non-interactivity
+- Maintains visual hierarchy
+- Indicates unavailability
+- Should be visually distinct",#4ba64b,#000025,color,interactive,1.0.25,primary.disabled color,web,"- Unavailable actions
+- Inactive buttons
+- Disabled form elements
+- Non-interactive states
+- Unavailable features"
+interactive.primary.focus,"- Supports keyboard navigation
+- Essential for accessibility
+- Shows current focus
+- Must be clearly visible",#4ba64b,#000026,color,interactive,1.0.26,primary.focus color,web,"- Keyboard navigation
+- Focused elements
+- Accessibility states
+- Form field focus
+- Navigation focus"
+interactive.secondary,"- Supports primary actions
+- Less prominent than primary
+- Alternative options
+- Should complement primary",#4ba64b,#000027,color,interactive,1.0.27,secondary color,web,"- Secondary actions
+- Alternative buttons
+- Supporting navigation
+- Less important actions
+- Secondary CTAs"
+interactive.secondary.hover,"- Consistent with primary hover
+- Less prominent feedback
+- Maintains hierarchy
+- Should be subtle",#4ba64b,#000028,color,interactive,1.0.28,secondary.hover color,web,"- Secondary element hover
+- Alternative hover states
+- Supporting interactions
+- Secondary navigation hover
+- Alternative link hover"
+interactive.secondary.active,"- Shows secondary interaction
+- Consistent with primary active
+- Maintains visual hierarchy
+- Should be distinct",#4ba64b,#000029,color,interactive,1.0.29,secondary.active color,web,"- Secondary pressed states
+- Alternative selections
+- Supporting active states
+- Secondary form elements
+- Alternative navigation"
+interactive.secondary.disabled,"- Shows secondary unavailability
+- Consistent with primary disabled
+- Maintains hierarchy
+- Should be clear",#4ba64b,#000030,color,interactive,1.0.30,secondary.disabled color,web,"- Disabled secondary elements
+- Unavailable alternatives
+- Inactive secondary actions
+- Supporting disabled states
+- Alternative unavailable"
+interactive.secondary.focus,"- Supports secondary accessibility
+- Consistent with primary focus
+- Maintains navigation
+- Must be visible",#4ba64b,#000031,color,interactive,1.0.31,secondary.focus color,web,"- Secondary focus states
+- Alternative keyboard navigation
+- Supporting focus elements
+- Secondary form focus
+- Alternative navigation focus"
+interactive.ghost,"- Minimal visual presence
+- Subtle interaction states
+- Clean, minimal look
+- Should be subtle",#4ba64b,#000032,color,interactive,1.0.32,ghost color,web,"- Subtle interactions
+- Background-less buttons
+- Minimal UI elements
+- Tertiary actions
+- Subtle navigation"
+interactive.ghost.hover,"- Very subtle feedback
+- Minimal visual change
+- Maintains subtlety
+- Should be gentle",#4ba64b,#000033,color,interactive,1.0.33,ghost.hover color,web,"- Ghost element hover
+- Subtle hover effects
+- Minimal interaction feedback
+- Ghost navigation hover
+- Subtle link hover"
+interactive.ghost.active,"- Shows minimal interaction
+- Maintains subtlety
+- Provides feedback
+- Should be gentle",#4ba64b,#000034,color,interactive,1.0.34,ghost.active color,web,"- Ghost pressed states
+- Subtle selections
+- Minimal active states
+- Ghost form elements
+- Subtle navigation"
+interactive.ghost.disabled,"- Shows minimal unavailability
+- Maintains subtlety
+- Clear but gentle
+- Should be clear",#4ba64b,#000035,color,interactive,1.0.35,ghost.disabled color,web,"- Disabled ghost elements
+- Unavailable subtle actions
+- Inactive ghost states
+- Supporting disabled
+- Minimal unavailable"
+interactive.ghost.focus,"- Supports accessibility
+- Maintains subtlety
+- Must be visible
+- Should be gentle",#4ba64b,#000036,color,interactive,1.0.36,ghost.focus color,web,"- Ghost focus states
+- Subtle keyboard navigation
+- Minimal focus elements
+- Ghost form focus
+- Subtle navigation focus"
+text.primary,"- Most important text color
+- Highest contrast
+- Primary reading color
+- Must meet WCAG AA standards",#4ba64b,#000037,color,text,1.0.37,primary color,web,"- Main content text
+- Body text
+- Headings
+- Primary information
+- Important content"
+text.secondary,"- Supports primary text
+- Creates visual hierarchy
+- Less prominent than primary
+- Still must be readable",#4ba64b,#000038,color,text,1.0.38,secondary color,web,"- Supporting text
+- Subtitles
+- Secondary information
+- Less important content
+- Supporting details"
+text.tertiary,"- Lowest text hierarchy
+- Used for supplementary info
+- Should still be legible
+- Creates depth in content",#4ba64b,#000039,color,text,1.0.39,tertiary color,web,"- Metadata
+- Timestamps
+- Supporting labels
+- Less important details
+- Tertiary information"
+text.disabled,"- Shows non-interactivity
+- Indicates unavailability
+- Must be clearly inactive
+- Maintains hierarchy",#4ba64b,#000040,color,text,1.0.40,disabled color,web,"- Disabled form elements
+- Unavailable content
+- Inactive text
+- Read-only content
+- Unavailable features"
+text.inverse,"- Used on dark surfaces
+- Must maintain contrast
+- Supports dark themes
+- Should be clearly visible",#4ba64b,#000041,color,text,1.0.41,inverse color,web,"- Text on dark backgrounds
+- Overlay text
+- Dark mode text
+- Contrast text
+- Inverse color schemes"
+text.link,"- Clearly indicates interactivity
+- Should be distinct
+- Must be recognizable as link
+- Should meet accessibility standards",#4ba64b,#000042,color,text,1.0.42,link color,web,"- Hyperlinks
+- Navigation links
+- Interactive text
+- Clickable content
+- Reference links"
+text.link.hover,"- Shows interactivity
+- Provides feedback
+- Should be noticeable
+- Maintains accessibility",#4ba64b,#000043,color,text,1.0.43,link.hover color,web,"- Link hover states
+- Interactive text feedback
+- Navigation hover
+- Link interaction
+- Mouse feedback"
+text.error,"- Indicates errors
+- Shows critical info
+- Must be attention-grabbing
+- Should be accessible",#4ba64b,#000044,color,text,1.0.44,error color,web,"- Error messages
+- Validation text
+- Warning messages
+- Critical information
+- Alert text"
+text.success,"- Shows positive states
+- Indicates success
+- Should be clear
+- Must be accessible",#4ba64b,#000045,color,text,1.0.45,success color,web,"- Success messages
+- Confirmation text
+- Positive feedback
+- Achievement text
+- Status updates"
+text.warning,"- Shows caution
+- Indicates warnings
+- Should be noticeable
+- Must be accessible",#4ba64b,#000046,color,text,1.0.46,warning color,web,"- Warning messages
+- Cautionary text
+- Alert information
+- Important notices
+- Attention text"
+text.info,"- Shows information
+- Provides guidance
+- Should be clear
+- Must be accessible",#4ba64b,#000047,color,text,1.0.47,info color,web,"- Information messages
+- Help text
+- Tooltips
+- Guidance text
+- Status information"
+text.placeholder,"- Shows placeholder content
+- Provides guidance
+- Should be subtle
+- Must be distinguishable",#4ba64b,#000048,color,text,1.0.48,placeholder color,web,"- Form placeholders
+- Input hints
+- Search suggestions
+- Default text
+- Helper text"
+text.selection,"- Shows selection
+- Indicates focus
+- Should be visible
+- Must maintain readability",#4ba64b,#000049,color,text,1.0.49,selection color,web,"- Selected text
+- Highlighted content
+- Text selection
+- Focused text
+- Active text"
+text.muted,"- Creates visual hierarchy
+- Supports main content
+- Should be subtle
+- Must be legible",#4ba64b,#000050,color,text,1.0.50,muted color,web,"- De-emphasized text
+- Background text
+- Supporting content
+- Less important info
+- Subtle text"
+text.brand,"- Represents brand
+- Should be distinctive
+- Maintains brand identity
+- Must be consistent",#4ba64b,#000051,color,text,1.0.51,brand color,web,"- Brand text
+- Logo text
+- Branded elements
+- Company name
+- Brand highlights"
+border.default,"- Primary border color
+- Creates basic separation
+- Should be subtle
+- Must provide visual structure",#4ba64b,#000052,color,border,1.0.52,default color,web,"- Standard borders
+- Container boundaries
+- Card edges
+- Section dividers
+- Basic separation"
+border.focus,"- Shows focus state
+- Supports accessibility
+- Must be clearly visible
+- Indicates current element",#4ba64b,#000053,color,border,1.0.53,focus color,web,"- Focused elements
+- Keyboard navigation
+- Active inputs
+- Selected components
+- Interactive focus"
+border.error,"- Indicates errors
+- Shows validation issues
+- Must be attention-grabbing
+- Should be accessible",#4ba64b,#000054,color,border,1.0.54,error color,web,"- Error states
+- Invalid inputs
+- Warning boundaries
+- Critical elements
+- Alert borders"
+border.disabled,"- Shows non-interactivity
+- Indicates unavailability
+- Should be visually distinct
+- Maintains hierarchy",#4ba64b,#000055,color,border,1.0.55,disabled color,web,"- Disabled elements
+- Inactive components
+- Unavailable items
+- Read-only states
+- Non-interactive elements"
+border.divider,"- Creates visual separation
+- Organizes content
+- Should be subtle
+- Improves readability",#4ba64b,#000056,color,border,1.0.56,divider color,web,"- Section separators
+- List dividers
+- Content boundaries
+- Group separators
+- Visual breaks"
+border.hover,"- Shows interactivity
+- Provides feedback
+- Should be noticeable
+- Maintains consistency",#4ba64b,#000057,color,border,1.0.57,hover color,web,"- Interactive hover states
+- Mouse feedback
+- Element highlighting
+- Navigation hover
+- Interactive feedback"
+border.active,"- Shows current state
+- Indicates selection
+- Must be distinct
+- Provides clear feedback",#4ba64b,#000058,color,border,1.0.58,active color,web,"- Active elements
+- Selected items
+- Pressed states
+- Current selection
+- Active navigation"
+border.success,"- Shows success
+- Indicates validity
+- Should be clear
+- Must be accessible",#4ba64b,#000059,color,border,1.0.59,success color,web,"- Success states
+- Valid inputs
+- Confirmation borders
+- Positive feedback
+- Achievement indicators"
+border.warning,"- Shows warnings
+- Indicates caution
+- Should be noticeable
+- Must be accessible",#4ba64b,#000060,color,border,1.0.60,warning color,web,"- Warning states
+- Caution indicators
+- Alert boundaries
+- Important notices
+- Attention borders"
+border.info,"- Shows information
+- Provides guidance
+- Should be clear
+- Must be accessible",#4ba64b,#000061,color,border,1.0.61,info color,web,"- Information states
+- Help indicators
+- Guidance borders
+- Status indicators
+- Tooltip borders"
+border.subtle,"- Creates subtle separation
+- Supports main content
+- Should be gentle
+- Maintains hierarchy",#4ba64b,#000062,color,border,1.0.62,subtle color,web,"- Light separation
+- Background borders
+- Supporting elements
+- Secondary boundaries
+- Soft dividers"
+border.strong,"- Creates strong separation
+- Indicates importance
+- Should be prominent
+- Must be clear",#4ba64b,#000063,color,border,1.0.63,strong color,web,"- Important boundaries
+- Primary separation
+- Key dividers
+- Main containers
+- Critical elements"
+border.brand,"- Represents brand
+- Should be distinctive
+- Maintains brand identity
+- Must be consistent",#4ba64b,#000064,color,border,1.0.64,brand color,web,"- Branded elements
+- Logo containers
+- Brand highlights
+- Company elements
+- Branded sections"
+border.elevated,"- Shows elevation
+- Creates depth
+- Should be subtle
+- Maintains hierarchy",#4ba64b,#000065,color,border,1.0.65,elevated color,web,"- Raised elements
+- Floating components
+- Modal borders
+- Elevated cards
+- Popover boundaries"
+border.transparent,"- Creates invisible structure
+- Supports interactions
+- Should be subtle
+- Maintains layout",#4ba64b,#000066,color,border,1.0.66,transparent color,web,"- Hidden borders
+- Focus indicators
+- Interactive states
+- Hover effects
+- State transitions"
+status.success,"- Indicates successful outcomes
+- Shows positive states
+- Must be clearly visible
+- Should be accessible
+- Creates positive feedback",#4ba64b,#000067,color,status,1.0.67,success color,web,"- Success messages
+- Completed actions
+- Positive feedback
+- Achievement indicators
+- Progress completion
+- Valid states
+- Confirmation badges"
+status.error,"- Shows critical issues
+- Indicates problems
+- Must be attention-grabbing
+- Should be accessible
+- Creates urgency",#4ba64b,#000068,color,status,1.0.68,error color,web,"- Error messages
+- Failed actions
+- Critical issues
+- Validation failures
+- System errors
+- Warning alerts
+- Problem indicators"
+status.warning,"- Indicates caution
+- Shows potential problems
+- Should be noticeable
+- Must be accessible
+- Creates awareness",#4ba64b,#000069,color,status,1.0.69,warning color,web,"- Warning messages
+- Cautionary states
+- Important notices
+- Potential issues
+- Attention alerts
+- Pending states
+- Temporary issues"
+status.info,"- Shows information
+- Provides guidance
+- Should be clear
+- Must be accessible
+- Creates understanding",#4ba64b,#000070,color,status,1.0.70,info color,web,"- Information messages
+- Status updates
+- Help indicators
+- Guidance alerts
+- System status
+- Progress indicators
+- General notifications"
+status.neutral,"- Shows default state
+- Indicates neutrality
+- Should be subtle
+- Must be accessible
+- Creates balance",#4ba64b,#000071,color,status,1.0.71,neutral color,web,"- Default states
+- Inactive elements
+- Pending states
+- Unknown status
+- Unspecified conditions
+- Default indicators
+- Placeholder states"
+status.pending,"- Shows in-progress state
+- Indicates waiting
+- Should be clear
+- Must be accessible
+- Creates expectation",#4ba64b,#000072,color,status,1.0.72,pending color,web,"- Loading states
+- Processing indicators
+- Waiting states
+- In-progress actions
+- Background tasks
+- Async operations
+- Progress indicators"
+status.completed,"- Shows completion
+- Indicates final state
+- Should be clear
+- Must be accessible
+- Creates closure",#4ba64b,#000073,color,status,1.0.73,completed color,web,"- Finished tasks
+- Completed actions
+- Done states
+- Final status
+- Achievement badges
+- Success indicators
+- Final states"
+status.critical,"- Shows critical issues
+- Indicates urgency
+- Must be prominent
+- Should be accessible
+- Creates urgency",#4ba64b,#000074,color,status,1.0.74,critical color,web,"- Critical errors
+- System failures
+- Emergency alerts
+- Severe issues
+- Urgent notifications
+- Critical warnings
+- Emergency states"
+status.attention,"- Shows importance
+- Indicates priority
+- Should be noticeable
+- Must be accessible
+- Creates awareness",#4ba64b,#000075,color,status,1.0.75,attention color,web,"- Attention needed
+- Important alerts
+- Priority messages
+- Required actions
+- Important updates
+- Key notifications
+- Priority indicators"
+status.unknown,"- Shows unknown state
+- Indicates uncertainty
+- Should be neutral
+- Must be accessible
+- Creates clarity",#4ba64b,#000076,color,status,1.0.76,unknown color,web,"- Undefined states
+- Unknown conditions
+- Unspecified status
+- Default indicators
+- Placeholder states
+- Initial states
+- Unset conditions"
+status.disabled,"- Shows unavailability
+- Indicates disabled state
+- Should be clear
+- Must be accessible
+- Creates understanding",#4ba64b,#000077,color,status,1.0.77,disabled color,web,"- Inactive states
+- Unavailable features
+- Disabled elements
+- Non-interactive states
+- Unavailable options
+- Inactive indicators
+- Disabled features"
+status.valid,"- Shows validity
+- Indicates correctness
+- Should be clear
+- Must be accessible
+- Creates confidence",#4ba64b,#000078,color,status,1.0.78,valid color,web,"- Valid inputs
+- Correct states
+- Validated fields
+- Proper conditions
+- Correct indicators
+- Valid states
+- Proper feedback"
+status.invalid,"- Shows invalidity
+- Indicates errors
+- Should be clear
+- Must be accessible
+- Creates correction",#4ba64b,#000079,color,status,1.0.79,invalid color,web,"- Invalid inputs
+- Incorrect states
+- Invalidated fields
+- Wrong conditions
+- Error indicators
+- Invalid states
+- Error feedback"
+status.processing,"- Shows processing
+- Indicates activity
+- Should be clear
+- Must be accessible
+- Creates feedback",#4ba64b,#000080,color,status,1.0.80,processing color,web,"- Processing states
+- Working indicators
+- Active operations
+- Background tasks
+- Loading states
+- Progress indicators
+- Active processes"
+status.ready,"- Shows readiness
+- Indicates availability
+- Should be clear
+- Must be accessible
+- Creates action",#4ba64b,#000081,color,status,1.0.81,ready color,web,"- Ready states
+- Available features
+- Prepared elements
+- Ready indicators
+- Available options
+- Prepared states
+- Ready feedback"
+background.primary,"- Light theme: `#FFFFFF`
+- Dark theme: `#1A1A1A`
+- High contrast: `#000000`",#4ba64b,#000082,color,background,1.0.82,primary color,web,"- Main page backgrounds
+- Primary containers
+- Default surfaces
+- Main content areas
+- Primary sections
+- Default layouts
+- Main interfaces"
+background.secondary,"- Light theme: `#F5F5F5`
+- Dark theme: `#2D2D2D`
+- High contrast: `#1A1A1A`",#4ba64b,#000083,color,background,1.0.83,secondary color,web,"- Secondary containers
+- Alternative surfaces
+- Side panels
+- Secondary sections
+- Alternative layouts
+- Side interfaces
+- Secondary content"
+background.tertiary,"- Light theme: `#EEEEEE`
+- Dark theme: `#404040`
+- High contrast: `#333333`",#4ba64b,#000084,color,background,1.0.84,tertiary color,web,"- Tertiary containers
+- Additional surfaces
+- Nested panels
+- Tertiary sections
+- Additional layouts
+- Nested interfaces
+- Tertiary content"
+background.inverse,"- Light theme: `#000000`
+- Dark theme: `#FFFFFF`
+- High contrast: `#FFFFFF`",#4ba64b,#000085,color,background,1.0.85,inverse color,web,"- Inverse containers
+- Contrast surfaces
+- Opposite panels
+- Inverse sections
+- Contrast layouts
+- Opposite interfaces
+- Inverse content"
+background.subtle,"- Light theme: `#F9F9F9`
+- Dark theme: `#262626`
+- High contrast: `#1A1A1A`",#4ba64b,#000086,color,background,1.0.86,subtle color,web,"- Subtle containers
+- Light surfaces
+- Gentle panels
+- Subtle sections
+- Light layouts
+- Gentle interfaces
+- Subtle content"
+background.muted,"- Light theme: `#F0F0F0`
+- Dark theme: `#333333`
+- High contrast: `#262626`",#4ba64b,#000087,color,background,1.0.87,muted color,web,"- Muted containers
+- Soft surfaces
+- Quiet panels
+- Muted sections
+- Soft layouts
+- Quiet interfaces
+- Muted content"
+background.accent,"- Light theme: `#E6F3FF`
+- Dark theme: `#1A3B4D`
+- High contrast: `#000080`",#4ba64b,#000088,color,background,1.0.88,accent color,web,"- Accent containers
+- Highlight surfaces
+- Emphasized panels
+- Accent sections
+- Highlight layouts
+- Emphasized interfaces
+- Accent content"
+background.success,"- Light theme: `#E6F4EA`
+- Dark theme: `#1E3B2D`
+- High contrast: `#006400`",#4ba64b,#000089,color,background,1.0.89,success color,web,"- Success containers
+- Positive surfaces
+- Success panels
+- Success sections
+- Positive layouts
+- Success interfaces
+- Success content"
+background.warning,"- Light theme: `#FFF3E0`
+- Dark theme: `#3B2D1E`
+- High contrast: `#804000`",#4ba64b,#000090,color,background,1.0.90,warning color,web,"- Warning containers
+- Caution surfaces
+- Warning panels
+- Warning sections
+- Caution layouts
+- Warning interfaces
+- Warning content"
+background.error,"- Light theme: `#FCE8E6`
+- Dark theme: `#3B1E1E`
+- High contrast: `#800000`",#4ba64b,#000091,color,background,1.0.91,error color,web,"- Error containers
+- Problem surfaces
+- Error panels
+- Error sections
+- Problem layouts
+- Error interfaces
+- Error content"
+background.info,"- Light theme: `#E3F2FD`
+- Dark theme: `#1E2B3B`
+- High contrast: `#000080`",#4ba64b,#000092,color,background,1.0.92,info color,web,"- Info containers
+- Information surfaces
+- Info panels
+- Info sections
+- Information layouts
+- Info interfaces
+- Info content"
+background.hover,"- Light theme: `#F5F5F5`
+- Dark theme: `#2D2D2D`
+- High contrast: `#1A1A1A`",#4ba64b,#000093,color,background,1.0.93,hover color,web,"- Hover states
+- Interactive surfaces
+- Hover panels
+- Hover sections
+- Interactive layouts
+- Hover interfaces
+- Hover content"
+background.active,"- Light theme: `#E0E0E0`
+- Dark theme: `#404040`
+- High contrast: `#333333`",#4ba64b,#000094,color,background,1.0.94,active color,web,"- Active states
+- Selected surfaces
+- Active panels
+- Active sections
+- Selected layouts
+- Active interfaces
+- Active content"
+background.disabled,"- Light theme: `#F5F5F5`
+- Dark theme: `#2D2D2D`
+- High contrast: `#1A1A1A`",#4ba64b,#000095,color,background,1.0.95,disabled color,web,"- Disabled states
+- Inactive surfaces
+- Disabled panels
+- Disabled sections
+- Inactive layouts
+- Disabled interfaces
+- Disabled content"
+background.focus,"- Light theme: `#E3F2FD`
+- Dark theme: `#1E2B3B`
+- High contrast: `#000080`",#4ba64b,#000096,color,background,1.0.96,focus color,web,"- Focused states
+- Keyboard surfaces
+- Focus panels
+- Focus sections
+- Keyboard layouts
+- Focus interfaces
+- Focus content"
+overlay.light,"- Light overlay
+- Subtle background
+- Should be gentle
+- Must be visible
+- Creates subtle emphasis",#4ba64b,#000097,color,overlay,1.0.97,light color,web,"- Light overlays
+- Subtle backgrounds
+- Soft highlights
+- Light modals
+- Gentle emphasis
+- Soft focus
+- Light emphasis"
+overlay.medium,"- Medium overlay
+- Standard background
+- Should be noticeable
+- Must be visible
+- Creates standard emphasis",#4ba64b,#000098,color,overlay,1.0.98,medium color,web,"- Medium overlays
+- Standard backgrounds
+- Regular highlights
+- Standard modals
+- Regular emphasis
+- Standard focus
+- Medium emphasis"
+overlay.dark,"- Dark overlay
+- Strong background
+- Should be prominent
+- Must be visible
+- Creates strong emphasis",#4ba64b,#000099,color,overlay,1.0.99,dark color,web,"- Dark overlays
+- Strong backgrounds
+- Strong highlights
+- Dark modals
+- Strong emphasis
+- Strong focus
+- Dark emphasis"
+overlay.darker,"- Very dark overlay
+- Heavy background
+- Should be strong
+- Must be visible
+- Creates heavy emphasis",#4ba64b,#000100,color,overlay,1.0.100,darker color,web,"- Very dark overlays
+- Heavy backgrounds
+- Heavy highlights
+- Very dark modals
+- Heavy emphasis
+- Heavy focus
+- Very dark emphasis"
+overlay.modal,"- Modal overlay
+- Dialog background
+- Should be prominent
+- Must be accessible
+- Creates modal focus",#4ba64b,#000101,color,overlay,1.0.101,modal color,web,"- Modal backdrops
+- Dialog overlays
+- Popup backgrounds
+- Modal containers
+- Dialog elements
+- Popup elements
+- Modal sections"
+overlay.tooltip,"- Tooltip overlay
+- Help background
+- Should be subtle
+- Must be visible
+- Creates tooltip focus",#4ba64b,#000102,color,overlay,1.0.102,tooltip color,web,"- Tooltip backgrounds
+- Help overlays
+- Info backgrounds
+- Tooltip containers
+- Help elements
+- Info elements
+- Tooltip sections"
+overlay.dropdown,"- Dropdown overlay
+- Menu background
+- Should be visible
+- Must be accessible
+- Creates menu focus",#4ba64b,#000103,color,overlay,1.0.103,dropdown color,web,"- Dropdown backgrounds
+- Menu overlays
+- List backgrounds
+- Dropdown containers
+- Menu elements
+- List elements
+- Dropdown sections"
+overlay.hover,"- Hover overlay
+- Interactive background
+- Should provide feedback
+- Must be visible
+- Creates interaction feedback",#4ba64b,#000104,color,overlay,1.0.104,hover color,web,"    - Hover states
+    - Interactive overlays
+    - Mouse feedback
+    - Hover backgrounds
+    - Interactive elements
+    - Hover elements
+    - Interactive states"
+overlay.active,"- Active overlay
+- Selected background
+- Should show state
+- Must be visible
+- Creates state indication",#4ba64b,#000105,color,overlay,1.0.105,active color,web,"- Active states
+- Selected overlays
+- Pressed backgrounds
+- Active elements
+- Selected elements
+- Pressed states
+- Active sections"
+overlay.focus,"- Focus overlay
+- Keyboard background
+- Should be noticeable
+- Must be accessible
+- Creates focus emphasis",#4ba64b,#000106,color,overlay,1.0.106,focus color,web,"- Focused elements
+- Keyboard focus
+- Focus indicators
+- Focused containers
+- Keyboard elements
+- Focus elements
+- Focused states"
+overlay.disabled,"- Disabled overlay
+- Inactive background
+- Should show state
+- Must be visible
+- Creates state indication",#4ba64b,#000107,color,overlay,1.0.107,disabled color,web,"- Disabled states
+- Inactive overlays
+- Unavailable backgrounds
+- Disabled elements
+- Inactive elements
+- Unavailable states
+- Disabled sections"
+overlay.loading,"- Loading overlay
+- Progress background
+- Should be visible
+- Must be accessible
+- Creates loading indication",#4ba64b,#000108,color,overlay,1.0.108,loading color,web,"- Loading states
+- Progress overlays
+- Loading backgrounds
+- Loading elements
+- Progress elements
+- Loading sections
+- Progress states"
+overlay.error,"- Error overlay
+- Problem background
+- Should be noticeable
+- Must be accessible
+- Creates error indication",#4ba64b,#000109,color,overlay,1.0.109,error color,web,"- Error states
+- Problem overlays
+- Error backgrounds
+- Error elements
+- Problem elements
+- Error sections
+- Problem states"
+overlay.success,"- Success overlay
+- Positive background
+- Should be visible
+- Must be accessible
+- Creates success indication",#4ba64b,#000110,color,overlay,1.0.110,success color,web,"- Success states
+- Positive overlays
+- Success backgrounds
+- Success elements
+- Positive elements
+- Success sections
+- Positive states"
+overlay.warning,"- Warning overlay
+- Caution background
+- Should be noticeable
+- Must be accessible
+- Creates warning indication",#4ba64b,#000111,color,overlay,1.0.111,,web,"- Warning states
+- Caution overlays
+- Warning backgrounds
+- Warning elements
+- Caution elements
+- Warning sections
+- Caution states"
+shadow.small,"- Minimal shadow
+- Light elevation
+- Should be subtle
+- Must be visible
+- Creates basic depth",#4ba64b,#000112,color,shadow,1.0.112,,web,"- Subtle elevation
+- Light depth
+- Basic separation
+- Minor depth
+- Light containers
+- Basic cards
+- Subtle elements"
+shadow.medium,"- Moderate shadow
+- Medium elevation
+- Should be noticeable
+- Must be visible
+- Creates standard depth",#4ba64b,#000113,color,shadow,1.0.113,,web,"- Moderate elevation
+- Medium depth
+- Standard separation
+- Regular depth
+- Standard containers
+- Regular cards
+- Medium elements"
+shadow.large,"- Significant elevation
+- Strong depth
+- Major separation
+- Strong depth
+- Major containers
+- Strong cards
+- Large elements",#4ba64b,#000114,color,shadow,1.0.114,,web,"- Significant elevation
+- Strong depth
+- Major separation
+- Strong depth
+- Major containers
+- Strong cards
+- Large elements"
+shadow.focus,"- Focus shadow
+- Active elevation
+- Should be noticeable
+- Must be accessible
+- Creates focus emphasis",#4ba64b,#000115,color,shadow,1.0.115,,web,"- Focused elements
+- Active states
+- Selected items
+- Focus indicators
+- Active containers
+- Selected elements
+- Focus states"
+shadow.hover,"- Hover shadow
+- Interactive elevation
+- Should provide feedback
+- Must be visible
+- Creates interaction feedback",#4ba64b,#000116,color,shadow,1.0.116,,web,"- Hover states
+- Interactive elements
+- Mouse feedback
+- Hover indicators
+- Interactive containers
+- Hover elements
+- Interactive states"
+shadow.active,"- Active shadow
+- Pressed elevation
+- Should show state
+- Must be visible
+- Creates state indication",#4ba64b,#000117,color,shadow,1.0.117,,web,"- Active elements
+- Pressed states
+- Selected items
+- Active indicators
+- Pressed containers
+- Active elements
+- Selected states"
+shadow.card,"- Card shadow
+- Container elevation
+- Should be subtle
+- Must be visible
+- Creates card depth",#4ba64b,#000118,color,shadow,1.0.118,,web,"- Card elements
+- Panel shadows
+- Container shadows
+- Card containers
+- Panel elements
+- Container elements
+- Card sections"
+shadow.modal,"    - Modal shadow
+    - Dialog elevation
+    - Should be prominent
+    - Must be visible
+    - Creates modal depth",#4ba64b,#000119,color,shadow,1.0.119,,web,"- Modal dialogs
+- Dialog shadows
+- Popup shadows
+- Modal containers
+- Dialog elements
+- Popup elements
+- Modal sections"
+shadow.dropdown,"- Dropdown shadow
+- Menu elevation
+- Should be visible
+- Must be accessible
+- Creates menu depth",#4ba64b,#000120,color,shadow,1.0.120,,web,"- Dropdown menus
+- Menu shadows
+- List shadows
+- Dropdown containers
+- Menu elements
+- List elements
+- Dropdown sections"
+shadow.tooltip,"- Tooltip shadow
+- Help elevation
+- Should be subtle
+- Must be visible
+- Creates tooltip depth",#4ba64b,#000121,color,shadow,1.0.121,,web,"- Tooltips
+- Help text
+- Info bubbles
+- Tooltip containers
+- Help elements
+- Info elements
+- Tooltip sections"
+shadow.header,"- Header shadow
+- Navigation elevation
+- Should be subtle
+- Must be visible
+- Creates header depth",#4ba64b,#000122,color,shadow,1.0.122,,web,"- Header sections
+- Navigation shadows
+- Top shadows
+- Header containers
+- Navigation elements
+- Top elements
+- Header sections"
+shadow.footer,"- Footer shadow
+- Bottom elevation
+- Should be subtle
+- Must be visible
+- Creates footer depth",#4ba64b,#000123,color,shadow,1.0.123,,web,"- Footer sections
+- Bottom shadows
+- End shadows
+- Footer containers
+- Bottom elements
+- End elements
+- Footer sections"
+shadow.sidebar,"- Sidebar shadow
+- Navigation elevation
+- Should be visible
+- Must be accessible
+- Creates sidebar depth",#4ba64b,#000124,color,shadow,1.0.124,,web,"- Sidebar sections
+- Navigation shadows
+- Side shadows
+- Sidebar containers
+- Navigation elements
+- Side elements
+- Sidebar sections"
+shadow.overlay,"- Overlay shadow
+- Background elevation
+- Should be subtle
+- Must be visible
+- Creates overlay depth",#4ba64b,#000125,color,shadow,1.0.125,,web,"- Overlay sections
+- Background shadows
+- Cover shadows
+- Overlay containers
+- Background elements
+- Cover elements
+- Overlay sections"
+shadow.inner,"- Inner shadow
+- Inset elevation
+- Should be visible
+- Must be accessible
+- Creates inset depth",#4ba64b,#000126,color,shadow,1.0.126,,web,"- Inset elements
+- Pressed states
+- Depressed elements
+- Inset containers
+- Pressed sections
+- Depressed sections
+- Inset sections"
+gradient.primary,"- Primary gradient
+- Main visual element
+- Must be prominent
+- Should be accessible
+- Creates visual hierarchy",#4ba64b,#000127,color,gradient,1.0.127,,web,"- Primary buttons
+- Main CTAs
+- Key elements
+- Important sections
+- Primary backgrounds
+- Main highlights
+- Key containers"
+gradient.secondary,"- Secondary gradient
+- Supporting visual element
+- Should complement primary
+- Must be accessible
+- Creates visual balance",#4ba64b,#000128,color,gradient,1.0.128,,web,"- Secondary buttons
+- Supporting elements
+- Alternative sections
+- Secondary backgrounds
+- Supporting highlights
+- Alternative containers
+- Secondary CTAs"
+gradient.accent,"- Accent gradient
+- Decorative element
+- Should add interest
+- Must be accessible
+- Creates visual interest",#4ba64b,#000129,color,gradient,1.0.129,,web,"- Accent elements
+- Decorative sections
+- Special highlights
+- Accent backgrounds
+- Decorative containers
+- Special sections
+- Accent CTAs"
+gradient.success,"- Success gradient
+- Positive element
+- Should indicate success
+- Must be accessible
+- Creates positive feedback",#4ba64b,#000130,color,gradient,1.0.130,,web,"- Success states
+- Positive elements
+- Achievement sections
+- Success backgrounds
+- Positive highlights
+- Achievement containers
+- Success indicators"
+gradient.error,"- Error gradient
+- Critical element
+- Should indicate error
+- Must be accessible
+- Creates urgency",#4ba64b,#000131,color,gradient,1.0.131,,web,"- Error states
+- Critical elements
+- Warning sections
+- Error backgrounds
+- Critical highlights
+- Warning containers
+- Error indicators"
+gradient.warning,"- Warning gradient
+- Caution element
+- Should indicate warning
+- Must be accessible
+- Creates awareness",#4ba64b,#000132,color,gradient,1.0.132,,web,"- Warning states
+- Caution elements
+- Alert sections
+- Warning backgrounds
+- Caution highlights
+- Alert containers
+- Warning indicators"
+gradient.info,"- Info gradient
+- Help element
+- Should indicate information
+- Must be accessible
+- Creates understanding",#4ba64b,#000133,color,gradient,1.0.133,,web,"- Information states
+- Help elements
+- Guidance sections
+- Info backgrounds
+- Help highlights
+- Guidance containers
+- Info indicators"
+gradient.hero,"- Hero gradient
+- Main visual
+- Should be impactful
+- Must be accessible
+- Creates visual impact",#4ba64b,#000134,color,gradient,1.0.134,,web,"- Hero sections
+- Main banners
+- Key visuals
+- Hero backgrounds
+- Main sections
+- Key containers
+- Banner elements"
+gradient.card,"- Card gradient
+- Container element
+- Should be subtle
+- Must be accessible
+- Creates depth",#4ba64b,#000135,color,gradient,1.0.135,,web,"- Card backgrounds
+- Panel elements
+- Container sections
+- Card containers
+- Panel backgrounds
+- Container elements
+- Card sections"
+gradient.modal,"- Modal gradient
+- Dialog element
+- Should be distinct
+- Must be accessible
+- Creates focus",#4ba64b,#000136,color,gradient,1.0.136,,web,"- Modal backgrounds
+- Dialog elements
+- Popup sections
+- Modal containers
+- Dialog backgrounds
+- Popup elements
+- Modal sections"
+gradient.header,"- Header gradient
+- Navigation element
+- Should be prominent
+- Must be accessible
+- Creates navigation hierarchy",#4ba64b,#000137,color,gradient,1.0.137,,web,"- Header sections
+- Navigation elements
+- Top sections
+- Header backgrounds
+- Navigation containers
+- Top elements
+- Header containers"
+gradient.footer,"- Footer gradient
+- Bottom element
+- Should be subtle
+- Must be accessible
+- Creates closure",#4ba64b,#000138,color,gradient,1.0.138,,web,"- Footer sections
+- Bottom elements
+- End sections
+- Footer backgrounds
+- Bottom containers
+- End elements
+- Footer containers"
+gradient.sidebar,"- Sidebar gradient
+- Navigation element
+- Should be distinct
+- Must be accessible
+- Creates navigation structure",#4ba64b,#000139,color,gradient,1.0.139,,web,"- Sidebar sections
+- Navigation elements
+- Side sections
+- Sidebar backgrounds
+- Navigation containers
+- Side elements
+- Sidebar containers"
+gradient.overlay,"- Overlay gradient
+- Background element
+- Should be subtle
+- Must be accessible
+- Creates depth",#4ba64b,#000140,color,gradient,1.0.140,,web,"- Overlay sections
+- Background elements
+- Cover sections
+- Overlay backgrounds
+- Background containers
+- Cover elements
+- Overlay containers"
+gradient.focus,"- Focus gradient
+- Active element
+- Should be noticeable
+- Must be accessible
+- Creates emphasis",#4ba64b,#000141,color,gradient,1.0.141,,web,"- Focus states
+- Active elements
+- Selected sections
+- Focus backgrounds
+- Active containers
+- Selected elements
+- Focus indicators"
+chart.primary,"- Primary data visualization
+- Main chart elements
+- Must be clearly visible
+- Should be accessible
+- Creates primary focus",#4ba64b,#000142,color,chart,1.0.142,,web,"- Main data series
+- Primary metrics
+- Key indicators
+- Primary trends
+- Main values
+- Primary data points
+- Key measurements"
+chart.secondary,"- Secondary data visualization
+- Supporting chart elements
+- Should complement primary
+- Must be accessible
+- Creates visual hierarchy",#4ba64b,#000143,color,chart,1.0.143,,web,"- Secondary data series
+- Supporting metrics
+- Alternative indicators
+- Secondary trends
+- Supporting values
+- Secondary data points
+- Supporting measurements"
+chart.tertiary,"- Tertiary data visualization
+- Additional chart elements
+- Should support main data
+- Must be accessible
+- Creates data depth",#4ba64b,#000144,color,chart,1.0.144,,web,"- Tertiary data series
+- Additional metrics
+- Extra indicators
+- Additional trends
+- Extra values
+- Additional data points
+- Extra measurements"
+chart.quaternary,"- Fourth data visualization
+- Extended chart elements
+- Should maintain distinction
+- Must be accessible
+- Creates data breadth",#4ba64b,#000145,color,chart,1.0.145,,web,"- Fourth data series
+- Extended metrics
+- Further indicators
+- Extended trends
+- Further values
+- Extended data points
+- Further measurements"
+chart.quinary,"- Fifth data visualization
+- Additional chart elements
+- Should maintain clarity
+- Must be accessible
+- Creates data completeness",#4ba64b,#000146,color,chart,1.0.146,,web,"- Fifth data series
+- Additional metrics
+- Extra indicators
+- Additional trends
+- Extra values
+- Additional data points
+- Extra measurements"
+chart.background,"- Chart background
+- Visualization container
+- Should be neutral
+- Must support data visibility
+- Creates chart foundation",#4ba64b,#000147,color,chart,1.0.147,,web,"- Chart container
+- Graph background
+- Plot area
+- Chart base
+- Visualization background
+- Graph container
+- Chart foundation"
+chart.grid,"- Grid visualization
+- Reference elements
+- Should be subtle
+- Must support readability
+- Creates measurement framework",#4ba64b,#000148,color,chart,1.0.148,,web,"- Grid lines
+- Reference lines
+- Measurement guides
+- Scale indicators
+- Grid markers
+- Reference markers
+- Scale guides"
+chart.axis,"- Axis visualization
+- Scale elements
+- Should be visible
+- Must support readability
+- Creates measurement structure",#4ba64b,#000149,color,chart,1.0.149,,web,"- Axis lines
+- Scale lines
+- Axis markers
+- Scale indicators
+- Axis labels
+- Scale labels
+- Axis guides"
+chart.highlight,"- Data emphasis
+- Important elements
+- Should be noticeable
+- Must be accessible
+- Creates data emphasis",#4ba64b,#000150,color,chart,1.0.150,,web,"- Data highlights
+- Important points
+- Key values
+- Significant data
+- Highlight markers
+- Important indicators
+- Key markers"
+chart.trend,"- Trend visualization
+- Pattern elements
+- Should be clear
+- Must support analysis
+- Creates pattern recognition",#4ba64b,#000151,color,chart,1.0.151,,web,"- Trend lines
+- Pattern indicators
+- Trend markers
+- Pattern guides
+- Trend indicators
+- Pattern lines
+- Trend guides"
+chart.comparison,"- Comparison visualization
+- Reference elements
+- Should be distinct
+- Must support comparison
+- Creates data comparison",#4ba64b,#000152,color,chart,1.0.152,,web,"- Comparison lines
+- Reference points
+- Comparison markers
+- Reference indicators
+- Comparison guides
+- Reference points
+- Comparison indicators"
+chart.forecast,"- Forecast visualization
+- Prediction elements
+- Should be distinct
+- Must support prediction
+- Creates future projection",#4ba64b,#000153,color,chart,1.0.153,,web,"- Forecast lines
+- Prediction indicators
+- Forecast markers
+- Prediction guides
+- Forecast indicators
+- Prediction lines
+- Forecast guides"
+chart.target,"- Target visualization
+- Goal elements
+- Should be clear
+- Must support goal tracking
+- Creates objective visualization",#4ba64b,#000154,color,chart,1.0.154,,web,"- Target lines
+- Goal indicators
+- Target markers
+- Goal guides
+- Target indicators
+- Goal lines
+- Target guides"
+chart.baseline,"- Baseline visualization
+- Reference elements
+- Should be visible
+- Must support comparison
+- Creates reference framework",#4ba64b,#000155,color,chart,1.0.155,,web,"- Baseline indicators
+- Reference points
+- Baseline markers
+- Reference guides
+- Baseline indicators
+- Reference lines
+- Baseline guides"
+chart.legend,"- Legend visualization
+- Series elements
+- Should be clear
+- Must support identification
+- Creates data identification",#4ba64b,#000156,color,chart,1.0.156,,web,"- Legend items
+- Series indicators
+- Legend markers
+- Series guides
+- Legend indicators
+- Series markers
+- Legend guides"
+feedback.success,"- Indicates successful outcomes
+- Shows positive results
+- Must be clearly visible
+- Should be accessible
+- Creates positive reinforcement",#4ba64b,#000157,color,feedback,1.0.157,,web,"- Success messages
+- Completed actions
+- Positive outcomes
+- Achievement notifications
+- Confirmation alerts
+- Task completion
+- Operation success"
+feedback.error,"- Shows critical issues
+- Indicates problems
+- Must be attention-grabbing
+- Should be accessible
+- Creates urgency",#4ba64b,#000158,color,feedback,1.0.158,,web,"- Error messages
+- Failed operations
+- Problem alerts
+- Critical issues
+- Operation failures
+- System errors
+- Validation errors"
+feedback.warning,"- Indicates caution
+- Shows potential problems
+- Should be noticeable
+- Must be accessible
+- Creates awareness",#4ba64b,#000159,color,feedback,1.0.159,,web,"- Warning messages
+- Cautionary alerts
+- Important notices
+- Potential issues
+- Attention alerts
+- System warnings
+- Caution states"
+feedback.info,"- Shows information
+- Provides guidance
+- Should be clear
+- Must be accessible
+- Creates understanding",#4ba64b,#000160,color,feedback,1.0.160,,web,"- Information messages
+- Status updates
+- Help notifications
+- System status
+- Progress updates
+- General alerts
+- Status information"
+feedback.neutral,"- Shows standard state
+- Indicates normal status
+- Should be subtle
+- Must be accessible
+- Creates balance",#4ba64b,#000161,color,feedback,1.0.161,,web,"- Default states
+- Status updates
+- General notifications
+- System messages
+- Default alerts
+- Standard feedback
+- Regular updates"
+feedback.processing,"- Shows in-progress state
+- Indicates processing
+- Should be clear
+- Must be accessible
+- Creates expectation",#4ba64b,#000162,color,feedback,1.0.162,,web,"- Loading states
+- Progress indicators
+- Operation status
+- Background tasks
+- Processing alerts
+- Task progress
+- Operation status"
+feedback.completed,"- Shows completion
+- Indicates finished state
+- Should be clear
+- Must be accessible
+- Creates closure",#4ba64b,#000163,color,feedback,1.0.163,,web,"- Task completion
+- Operation success
+- Process completion
+- Action completion
+- Task finished
+- Operation done
+- Process finished"
+feedback.pending,"- Shows waiting state
+- Indicates pending status
+- Should be clear
+- Must be accessible
+- Creates patience",#4ba64b,#000164,color,feedback,1.0.164,,web,"- Waiting states
+- Queue status
+- Delayed operations
+- Waiting alerts
+- Queue indicators
+- Delayed status
+- Waiting feedback"
+feedback.valid,"- Shows validity
+- Indicates correctness
+- Should be clear
+- Must be accessible
+- Creates confidence",#4ba64b,#000165,color,feedback,1.0.165,,web,"- Valid inputs
+- Correct states
+- Validated fields
+- Proper conditions
+- Valid indicators
+- Correct feedback
+- Valid states"
+feedback.invalid,"- Shows invalidity
+- Indicates errors
+- Should be clear
+- Must be accessible
+- Creates correction",#4ba64b,#000166,color,feedback,1.0.166,,web,"- Invalid inputs
+- Incorrect states
+- Invalidated fields
+- Wrong conditions
+- Error indicators
+- Invalid feedback
+- Error states"
+feedback.attention,"- Shows importance
+- Indicates priority
+- Should be noticeable
+- Must be accessible
+- Creates awareness",#4ba64b,#000167,color,feedback,1.0.167,,web,"- Important alerts
+- Priority messages
+- Attention needed
+- Key notifications
+- Important updates
+- Priority alerts
+- Key messages"
+feedback.help,"- Shows help
+- Indicates assistance
+- Should be clear
+- Must be accessible
+- Creates support",#4ba64b,#000168,color,feedback,1.0.168,,web,"- Help messages
+- Assistance alerts
+- Guidance notifications
+- Support messages
+- Help indicators
+- Assistance feedback
+- Guidance alerts"
+feedback.offline,"- Shows offline state
+- Indicates connection issues
+- Should be clear
+- Must be accessible
+- Creates awareness",#4ba64b,#000169,color,feedback,1.0.169,,web,"- Connection loss
+- Offline status
+- Network issues
+- Sync problems
+- Connection alerts
+- Network status
+- Sync status"
+feedback.sync,"- Shows sync state
+- Indicates update status
+- Should be clear
+- Must be accessible
+- Creates understanding",#4ba64b,#000170,color,feedback,1.0.170,,web,"- Sync status
+- Update progress
+- Sync indicators
+- Update status
+- Sync alerts
+- Update feedback
+- Sync progress"
+feedback.timeout,"- Shows timeout
+- Indicates time limit
+- Should be clear
+- Must be accessible
+- Creates awareness",#4ba64b,#000171,color,feedback,1.0.171,,web,"- Operation timeout
+- Request timeout
+- Process timeout
+- Timeout alerts
+- Request status
+- Process status
+- Operation status"
+a11y.focusRing,"- Clear focus indicator
+- Keyboard navigation
+- Must be highly visible
+- Should meet WCAG standards
+- Essential for accessibility",#4ba64b,#000172,color,a11y,1.0.172,,web,"- Keyboard navigation
+- Focus indicators
+- Interactive elements
+- Form fields
+- Navigation focus
+- Button focus
+- Link focus"
+a11y.selection,"- Text selection color
+- Content highlighting
+- Must be visible
+- Should maintain readability
+- Supports text interaction",#4ba64b,#000173,color,a11y,1.0.173,,web,"- Text selection
+- Content highlighting
+- Selected text
+- Content focus
+- Text emphasis
+- Content marking
+- Selection indicators"
+a11y.highlight,"- Content emphasis
+- Information highlighting
+- Must be noticeable
+- Should be clear
+- Supports content hierarchy",#4ba64b,#000174,color,a11y,1.0.174,,web,"-Important content
+- Key information
+- Critical text
+- Essential content
+- Priority information
+- Key points
+- Important details"
+a11y.error,"- Error indication
+- Problem highlighting
+- Must be clear
+- Should be accessible
+- Supports error feedback",#4ba64b,#000175,color,a11y,1.0.175,,web,"- Error states
+- Validation errors
+- Form errors
+- Input errors
+- Critical issues
+- Error messages
+- Problem indicators"
+a11y.success,"- Success indication
+- Positive feedback
+- Must be clear
+- Should be accessible
+- Supports success feedback",#4ba64b,#000176,color,a11y,1.0.176,,web,"- Success states
+- Valid inputs
+- Confirmation
+- Positive feedback
+- Achievement
+- Success messages
+- Valid indicators"
+a11y.warning,"- Warning indication
+- Caution highlighting
+- Must be noticeable
+- Should be accessible
+- Supports warning feedback",#4ba64b,#000177,color,a11y,1.0.177,,web,"- Warning states
+- Cautionary messages
+- Important notices
+- Attention alerts
+- Warning indicators
+- Caution states
+- Alert messages"
+a11y.info,"- Information indication
+- Help highlighting
+- Must be clear
+- Should be accessible
+- Supports information feedback",#4ba64b,#000178,color,a11y,1.0.178,,web,"- Information states
+- Help messages
+- Guidance text
+- Status updates
+- Information alerts
+- Help indicators
+- Status messages"
+a11y.required,"- Required indication
+- Mandatory highlighting
+- Must be clear
+- Should be accessible
+- Supports form requirements",#4ba64b,#000179,color,a11y,1.0.179,,web,"- Required fields
+- Mandatory inputs
+- Required indicators
+- Form requirements
+- Required elements
+- Mandatory fields
+- Required states"
+a11y.current,"    - Current indication
+    - Active highlighting
+    - Must be clear
+    - Should be accessible
+    - Supports navigation",#4ba64b,#000180,color,a11y,1.0.180,,web,"- Current item
+- Active element
+- Current state
+- Active indicator
+- Current position
+- Active location
+- Current focus"
+a11y.visited,"- Visited indication
+- Viewed highlighting
+- Must be clear
+- Should be accessible
+- Supports navigation history",#4ba64b,#000181,color,a11y,1.0.181,,web,"- Visited links
+- Viewed content
+- Accessed items
+- Viewed states
+- Visited pages
+- Viewed elements
+- Accessed links"
+a11y.disabled,"- Disabled indication
+- Unavailable highlighting
+- Must be clear
+- Should be accessible
+- Supports state indication",#4ba64b,#000182,color,a11y,1.0.182,,web,"- Disabled elements
+- Unavailable items
+- Inactive states
+- Disabled controls
+- Unavailable features
+- Inactive elements
+- Disabled states"
+a11y.placeholder," - Placeholder indication
+    - Help text highlighting
+    - Must be clear
+    - Should be accessible
+    - Supports form guidance",#4ba64b,#000183,color,a11y,1.0.183,,web,"- Input placeholders
+- Form hints
+- Field guidance
+- Input help
+- Form assistance
+- Field hints
+- Input guidance"
+a11y.help,"- Help indication
+- Assistance highlighting
+- Must be clear
+- Should be accessible
+- Supports user assistance",#4ba64b,#000184,color,a11y,1.0.184,,web,"- Help text
+- Assistance messages
+- Guidance text
+- Help indicators
+- Support text
+- Assistance indicators
+- Help messages"
+a11y.offline,"- Offline indication
+- Status highlighting
+- Must be clear
+- Should be accessible
+- Supports status indication",#4ba64b,#000185,color,a11y,1.0.185,,web,"- Connection issues
+- Sync status
+- Network states
+- Connection indicators
+- Sync indicators
+- Network status"
+a11y.loading,"- Loading indication
+- Progress highlighting
+- Must be clear
+- Should be accessible
+- Supports progress indication",#4ba64b,#000186,color,a11y,1.0.186,,web,"- Loading states
+- Progress indicators
+- Loading feedback
+- Progress states
+- Loading indicators
+- Progress feedback
+- Loading messages"

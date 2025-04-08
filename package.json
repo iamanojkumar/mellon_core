@@ -1,0 +1,50 @@
+{
+  "name": "ku-core-library",
+  "version": "1.0.0",
+  "description": "Design token management system",
+  "main": "dist/js/index.js",
+  "types": "dist/ts/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build/build.js",
+    "watch": "node scripts/watch/watch-tokens.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "process-csv": "node scripts/csv-validation/process-csv.js",
+    "generate-stories": "node scripts/generate-color-stories.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design-tokens",
+    "style-dictionary",
+    "css",
+    "scss",
+    "design-system"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-onboarding": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/cli": "^8.0.0",
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "chokidar": "^3.6.0",
+    "csv-parse": "^5.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.71.0",
+    "style-dictionary": "^3.9.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0"
+  }
+}
