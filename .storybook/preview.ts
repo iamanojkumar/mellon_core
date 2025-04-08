@@ -11,19 +11,30 @@ const preview: Preview = {
       },
     },
     backgrounds: {
+      disable: true,
+      grid: {
+        disable: true
+      }
+    },
+    themes: {
       default: 'light',
-      values: [
-        {
-          name: 'light',
-          value: '#ffffff',
-        },
-        {
-          name: 'dark',
-          value: '#1a1a1a',
-        },
+      list: [
+        { name: 'light', class: '', color: '#ffffff' },
+        { name: 'dark', class: 'dark', color: '#1a1a1a' },
       ],
     },
   },
+  decorators: [
+    (Story) => {
+      // Get the current theme
+      const theme = document.body.getAttribute('data-theme') || 'light';
+      
+      // Apply theme to the root element
+      document.documentElement.setAttribute('data-theme', theme);
+      
+      return Story();
+    },
+  ],
 };
 
 export default preview;

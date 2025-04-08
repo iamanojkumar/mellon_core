@@ -13,7 +13,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "process-csv": "node scripts/csv-validation/process-csv.js",
-    "generate-stories": "node scripts/generate-color-stories.js",
+    "generate-stories": "node scripts/generate-color-stories.js && node scripts/generate-typography-stories.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
