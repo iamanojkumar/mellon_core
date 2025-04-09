@@ -1,39 +1,24 @@
 const StyleDictionary = require('style-dictionary');
 
-// Helper function to check if a value is a valid RGBA string
-const isRgba = (value) => {
-  return typeof value === 'string' && value.startsWith('rgba(');
-};
+// Helper functions
+function isRgba(value) {
+  return /^rgba?\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*(?:,\s*[\d.]+\s*)?\)$/.test(value);
+}
 
-// Helper function to check if a value is a valid hex color
-const isHex = (value) => {
-  return typeof value === 'string' && value.startsWith('#');
-};
+function isHex(value) {
+  return /^#[0-9A-Fa-f]{3,8}$/.test(value);
+}
 
-// Helper function to normalize color values
-const normalizeColor = (value) => {
-  if (isRgba(value)) {
-    return value.trim();
-  }
-  if (isHex(value)) {
-    return value;
-  }
+function normalizeColor(value) {
   return value;
-};
+}
 
-// Helper function to normalize token name
-const normalizeTokenName = (path) => {
-  // Remove any 'typography.' or 'color.' prefix from the path
-  const cleanPath = path.map(part => part.replace(/^(typography\.|color\.|size\.)/, ''));
-  // Flatten nested paths by joining all components with hyphens
-  return cleanPath.join('-');
-};
+function normalizeTokenName(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+}
 
-// Helper function to format typography value as CSS
-const formatTypographyCSS = (token) => {
+function formatTypographyCSS(value) {
   const properties = [];
-  const value = token.value || token;
-
   if (value.fontFamily) properties.push(`font-family: ${value.fontFamily}`);
   if (value.fontSize) properties.push(`font-size: ${value.fontSize}`);
   if (value.fontWeight) properties.push(`font-weight: ${value.fontWeight}`);
@@ -42,64 +27,91 @@ const formatTypographyCSS = (token) => {
   if (value.textDecoration) properties.push(`text-decoration: ${value.textDecoration}`);
   if (value.textTransform) properties.push(`text-transform: ${value.textTransform}`);
   return properties.join('; ');
-};
+}
 
-const registerTransforms = (StyleDictionary) => {
+function registerTransforms(StyleDictionary) {
+  // Name transform - ensures unique names by including the full path
   StyleDictionary.registerTransform({
     name: 'name/custom',
     type: 'name',
-    transformer: (token, options) => {
-      const prefix = options?.prefix || '';
-      const name = token.name || normalizeTokenName(token.path);
-      return prefix ? `${prefix}-${name}` : name;
+    transformer: function(prop) {
+      const type = prop.path[0]; // Use the first path segment as the type
+      const path = prop.path.slice(1); // Remove the first segment (type)
+      return `${type}-${path.join('-')}`;
     }
   });
 
-  StyleDictionary.registerTransform({
-    name: 'color/css',
-    type: 'value',
-    matcher: (token) => {
-      return token.category === 'color' && token.value;
-    },
-    transformer: (token) => {
-      if (typeof token.value === 'object') {
-        const light = token.value.light;
-        const dark = token.value.dark || token.value.light;
-        return { light, dark };
-      }
-      return token.value;
-    }
-  });
-
+  // Typography transform
   StyleDictionary.registerTransform({
     name: 'typography/css',
     type: 'value',
-    matcher: (token) => {
-      return token.type === 'typography' && token.value && token.value.fontFamily;
-    },
-    transformer: (token) => {
-      return formatTypographyCSS(token);
-    }
+    matcher: (prop) => prop.type === 'typography',
+    transformer: (prop) => formatTypographyCSS(prop.original.value)
   });
 
+  // Color transform
   StyleDictionary.registerTransform({
-    name: 'size/css',
+    name: 'color/css',
     type: 'value',
-    matcher: (token) => {
-      return token.type === 'size';
-    },
-    transformer: (token) => {
-      return token.value;
+    matcher: (prop) => prop.type === 'color' || prop.type === 'brand' || prop.type === 'surface' || prop.type === 'text' || prop.type === 'interactive' || prop.type === 'border' || prop.type === 'status' || prop.type === 'background' || prop.type === 'overlay' || prop.type === 'shadow' || prop.type === 'gradient' || prop.type === 'chart' || prop.type === 'feedback' || prop.type === 'a11y',
+    transformer: (prop) => {
+      const value = prop.original.value;
+      if (typeof value === 'object' && value.light) {
+        return value.light;
+      }
+      return value;
     }
   });
 
+  // Value transform
+  StyleDictionary.registerTransform({
+    name: 'value/css',
+    type: 'value',
+    matcher: function(prop) {
+      return true; // This will be the fallback transform
+    },
+    transformer: function(prop) {
+      if (typeof prop.original.value === 'string') {
+        return prop.original.value;
+      }
+
+      const value = prop.original.value;
+      if (!value) return '';
+
+      // Handle both direct values and nested theme values
+      const propValue = value.light || value;
+
+      if (typeof propValue === 'string') {
+        return propValue;
+      }
+
+      // Handle objects with specific properties
+      if (propValue.value) {
+        return propValue.value;
+      }
+
+      // Handle arrays
+      if (Array.isArray(propValue)) {
+        return propValue.join(', ');
+      }
+
+      // Handle other objects
+      if (typeof propValue === 'object') {
+        return Object.values(propValue).join(', ');
+      }
+
+      return propValue;
+    }
+  });
+
+  // Transform groups
   StyleDictionary.registerTransformGroup({
     name: 'custom/css',
     transforms: [
       'name/custom',
-      'color/css',
       'typography/css',
-      'size/css'
+      'color/css',
+      'value/css'
     ]
   });
 
@@ -107,9 +119,9 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/scss',
     transforms: [
       'name/custom',
-      'color/css',
       'typography/css',
-      'size/css'
+      'color/css',
+      'value/css'
     ]
   });
 
@@ -117,12 +129,12 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/ts',
     transforms: [
       'name/custom',
-      'color/css',
       'typography/css',
-      'size/css'
+      'color/css',
+      'value/css'
     ]
   });
-};
+}
 
 module.exports = {
   registerTransforms
