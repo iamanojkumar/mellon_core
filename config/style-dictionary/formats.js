@@ -8,6 +8,8 @@ const cleanTokenName = (name, prefix) => {
   name = name.replace(/^(typography\.|color\.)/, '');
   // Replace dots with hyphens
   name = name.replace(/\./g, '-');
+  // Convert hyphenated names to camelCase
+  name = name.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
   // Add prefix if not already present
   return name.startsWith(prefix) ? name : `${prefix}-${name}`;
 };

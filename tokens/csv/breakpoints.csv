@@ -1,0 +1,36 @@
+name,value,type,description,category,status,version,tags,platform,usage
+breakpoint.mobile,320px,breakpoint,Mobile breakpoint for small screens,responsive,active,1.0.0,breakpoint responsive,all,Use for mobile-first layouts
+breakpoint.tablet,768px,breakpoint,Tablet breakpoint for medium screens,responsive,active,1.0.0,breakpoint responsive,all,Use for tablet layouts
+breakpoint.desktop,1024px,breakpoint,Desktop breakpoint for large screens,responsive,active,1.0.0,breakpoint responsive,all,Use for desktop layouts
+breakpoint.large,1440px,breakpoint,Large desktop breakpoint,responsive,active,1.0.0,breakpoint responsive,all,Use for large desktop layouts
+breakpoint.xlarge,1920px,breakpoint,Extra large desktop breakpoint,responsive,active,1.0.0,breakpoint responsive,all,Use for extra large desktop layouts
+breakpoint.layout.single,480px,breakpoint,Single column layout breakpoint,layout,active,1.0.0,breakpoint layout,all,Use for single column layouts
+breakpoint.layout.two,768px,breakpoint,Two column layout breakpoint,layout,active,1.0.0,breakpoint layout,all,Use for two column layouts
+breakpoint.layout.three,1024px,breakpoint,Three column layout breakpoint,layout,active,1.0.0,breakpoint layout,all,Use for three column layouts
+breakpoint.layout.four,1280px,breakpoint,Four column layout breakpoint,layout,active,1.0.0,breakpoint layout,all,Use for four column layouts
+breakpoint.layout.masonry,992px,breakpoint,Masonry layout breakpoint,layout,active,1.0.0,breakpoint layout,all,Use for masonry grid layouts
+breakpoint.component.collapse,480px,breakpoint,Component collapse breakpoint,component,active,1.0.0,breakpoint component,all,Use for collapsing components
+breakpoint.component.expand,768px,breakpoint,Component expand breakpoint,component,active,1.0.0,breakpoint component,all,Use for expanding components
+breakpoint.component.stack,640px,breakpoint,Component stack breakpoint,component,active,1.0.0,breakpoint component,all,Use for stacking components
+breakpoint.component.inline,800px,breakpoint,Component inline breakpoint,component,active,1.0.0,breakpoint component,all,Use for inline components
+breakpoint.component.grid,960px,breakpoint,Component grid breakpoint,component,active,1.0.0,breakpoint component,all,Use for grid components
+breakpoint.nav.mobile,320px,breakpoint,Navigation mobile breakpoint,navigation,active,1.0.0,breakpoint navigation,all,Use for mobile navigation
+breakpoint.nav.tablet,768px,breakpoint,Navigation tablet breakpoint,navigation,active,1.0.0,breakpoint navigation,all,Use for tablet navigation
+breakpoint.nav.desktop,1024px,breakpoint,Navigation desktop breakpoint,navigation,active,1.0.0,breakpoint navigation,all,Use for desktop navigation
+breakpoint.nav.hamburger,768px,breakpoint,Navigation hamburger menu breakpoint,navigation,active,1.0.0,breakpoint navigation,all,Use for hamburger menu toggle
+breakpoint.nav.full,1024px,breakpoint,Navigation full menu breakpoint,navigation,active,1.0.0,breakpoint navigation,all,Use for full menu display
+breakpoint.density.compact,320px,breakpoint,Compact density breakpoint,density,active,1.0.0,breakpoint density,all,Use for compact layouts
+breakpoint.density.normal,768px,breakpoint,Normal density breakpoint,density,active,1.0.0,breakpoint density,all,Use for normal density layouts
+breakpoint.density.spacious,1024px,breakpoint,Spacious density breakpoint,density,active,1.0.0,breakpoint density,all,Use for spacious layouts
+breakpoint.density.full,1440px,breakpoint,Full density breakpoint,density,active,1.0.0,breakpoint density,all,Use for full density layouts
+breakpoint.density.fluid,100%,breakpoint,Fluid density breakpoint,density,active,1.0.0,breakpoint density,all,Use for fluid density layouts
+breakpoint.typography.small,320px,breakpoint,Small typography breakpoint,typography,active,1.0.0,breakpoint typography,all,Use for small text sizes
+breakpoint.typography.medium,768px,breakpoint,Medium typography breakpoint,typography,active,1.0.0,breakpoint typography,all,Use for medium text sizes
+breakpoint.typography.large,1024px,breakpoint,Large typography breakpoint,typography,active,1.0.0,breakpoint typography,all,Use for large text sizes
+breakpoint.typography.xlarge,1440px,breakpoint,Extra large typography breakpoint,typography,active,1.0.0,breakpoint typography,all,Use for extra large text sizes
+breakpoint.typography.fluid,100%,breakpoint,Fluid typography breakpoint,typography,active,1.0.0,breakpoint typography,all,Use for fluid typography
+breakpoint.spacing.tight,320px,breakpoint,Tight spacing breakpoint,spacing,active,1.0.0,breakpoint spacing,all,Use for tight spacing
+breakpoint.spacing.normal,768px,breakpoint,Normal spacing breakpoint,spacing,active,1.0.0,breakpoint spacing,all,Use for normal spacing
+breakpoint.spacing.loose,1024px,breakpoint,Loose spacing breakpoint,spacing,active,1.0.0,breakpoint spacing,all,Use for loose spacing
+breakpoint.spacing.xloose,1440px,breakpoint,Extra loose spacing breakpoint,spacing,active,1.0.0,breakpoint spacing,all,Use for extra loose spacing
+breakpoint.spacing.fluid,100%,breakpoint,Fluid spacing breakpoint,spacing,active,1.0.0,breakpoint spacing,all,Use for fluid spacing 

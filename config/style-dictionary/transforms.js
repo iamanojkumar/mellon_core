@@ -37,7 +37,20 @@ function registerTransforms(StyleDictionary) {
     transformer: function(prop) {
       const type = prop.path[0]; // Use the first path segment as the type
       const path = prop.path.slice(1); // Remove the first segment (type)
-      return `${type}-${path.join('-')}`;
+      
+      // Join the path segments with hyphens
+      let name = path.join('-');
+      
+      // Special handling for text tokens to ensure proper camelCase
+      if (type === 'text' || type === 'typography') {
+        // Handle special cases first
+        name = name.replace(/a11y-screen-reader/i, 'a11yScreenReader')
+                  .replace(/high-contrast/i, 'highContrast')
+                  // Then handle any remaining hyphens
+                  .replace(/-([a-z0-9])/gi, (match, letter) => letter.toUpperCase());
+      }
+      
+      return name;
     }
   });
 

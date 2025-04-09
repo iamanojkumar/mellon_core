@@ -10,7 +10,8 @@
   "scripts": {
     "convert-spacing": "node scripts/csv-to-json/convert-spacing.js",
     "convert-size": "node scripts/csv-to-json/convert-size.js",
-    "build": "npm run convert-spacing && npm run convert-size && node scripts/build/build.js",
+    "convert-breakpoints": "node scripts/csv-to-json/convert-breakpoints.js",
+    "build": "npm run convert-spacing && npm run convert-size && npm run convert-breakpoints && node scripts/build/build.js",
     "watch": "node scripts/watch/watch-tokens.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
