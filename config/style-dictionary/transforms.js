@@ -1,45 +1,24 @@
 const StyleDictionary = require('style-dictionary');
 
-// Helper function to check if a value is a valid RGBA string
-const isRgba = (value) => {
-  return typeof value === 'string' && value.startsWith('rgba(');
-};
+// Helper functions
+function isRgba(value) {
+  return /^rgba?\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*(?:,\s*[\d.]+\s*)?\)$/.test(value);
+}
 
-// Helper function to check if a value is a valid hex color
-const isHex = (value) => {
-  return typeof value === 'string' && value.startsWith('#');
-};
+function isHex(value) {
+  return /^#[0-9A-Fa-f]{3,8}$/.test(value);
+}
 
-// Helper function to normalize color values
-const normalizeColor = (value) => {
-  if (isRgba(value)) {
-    return value.trim();
-  }
-  if (isHex(value)) {
-    // Convert hex to rgba
-    const hex = value.replace('#', '');
-    const r = parseInt(hex.substring(0, 2), 16);
-    const g = parseInt(hex.substring(2, 4), 16);
-    const b = parseInt(hex.substring(4, 6), 16);
-    const a = hex.length === 8 ? parseInt(hex.substring(6, 8), 16) / 255 : 1;
-    return `rgba(${r}, ${g}, ${b}, ${a})`;
-  }
+function normalizeColor(value) {
   return value;
-};
+}
 
-// Helper function to normalize token name
-const normalizeTokenName = (path) => {
-  // Remove any 'typography.' or 'color.' prefix from the path
-  const cleanPath = path.map(part => part.replace(/^(typography\.|color\.)/, ''));
-  // Flatten nested paths by joining all components with hyphens
-  return cleanPath.join('-');
-};
+function normalizeTokenName(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+}
 
-// Helper function to format typography value as CSS
-const formatTypographyCSS = (token) => {
+function formatTypographyCSS(value) {
   const properties = [];
-  const value = token.value || token;
-
   if (value.fontFamily) properties.push(`font-family: ${value.fontFamily}`);
   if (value.fontSize) properties.push(`font-size: ${value.fontSize}`);
   if (value.fontWeight) properties.push(`font-weight: ${value.fontWeight}`);
@@ -48,49 +27,104 @@ const formatTypographyCSS = (token) => {
   if (value.textDecoration) properties.push(`text-decoration: ${value.textDecoration}`);
   if (value.textTransform) properties.push(`text-transform: ${value.textTransform}`);
   return properties.join('; ');
-};
+}
 
-const registerTransforms = (StyleDictionary) => {
+function registerTransforms(StyleDictionary) {
+  // Name transform - ensures unique names by including the full path
   StyleDictionary.registerTransform({
     name: 'name/custom',
     type: 'name',
-    transformer: (token, options) => {
-      const prefix = options?.prefix || '';
-      const name = token.name || normalizeTokenName(token.path);
-      return prefix ? `${prefix}-${name}` : name;
+    transformer: function(prop) {
+      const type = prop.path[0]; // Use the first path segment as the type
+      const path = prop.path.slice(1); // Remove the first segment (type)
+      
+      // Join the path segments with hyphens
+      let name = path.join('-');
+      
+      // Special handling for text tokens to ensure proper camelCase
+      if (type === 'text' || type === 'typography') {
+        // Handle special cases first
+        name = name.replace(/a11y-screen-reader/i, 'a11yScreenReader')
+                  .replace(/high-contrast/i, 'highContrast')
+                  // Then handle any remaining hyphens
+                  .replace(/-([a-z0-9])/gi, (match, letter) => letter.toUpperCase());
+      }
+      
+      return name;
     }
   });
 
-  StyleDictionary.registerTransform({
-    name: 'color/css-rgba',
-    type: 'value',
-    matcher: (token) => {
-      return token.category === 'color' && token.value && (token.value.light || token.value.dark);
-    },
-    transformer: (token) => {
-      const light = normalizeColor(token.value.light);
-      const dark = normalizeColor(token.value.dark || token.value.light);
-      return { light, dark };
-    }
-  });
-
+  // Typography transform
   StyleDictionary.registerTransform({
     name: 'typography/css',
     type: 'value',
-    matcher: (token) => {
-      return token.type === 'typography' && token.value && token.value.fontFamily;
-    },
-    transformer: (token) => {
-      return formatTypographyCSS(token);
+    matcher: (prop) => prop.type === 'typography',
+    transformer: (prop) => formatTypographyCSS(prop.original.value)
+  });
+
+  // Color transform
+  StyleDictionary.registerTransform({
+    name: 'color/css',
+    type: 'value',
+    matcher: (prop) => prop.type === 'color' || prop.type === 'brand' || prop.type === 'surface' || prop.type === 'text' || prop.type === 'interactive' || prop.type === 'border' || prop.type === 'status' || prop.type === 'background' || prop.type === 'overlay' || prop.type === 'shadow' || prop.type === 'gradient' || prop.type === 'chart' || prop.type === 'feedback' || prop.type === 'a11y',
+    transformer: (prop) => {
+      const value = prop.original.value;
+      if (typeof value === 'object' && value.light) {
+        return value.light;
+      }
+      return value;
     }
   });
 
+  // Value transform
+  StyleDictionary.registerTransform({
+    name: 'value/css',
+    type: 'value',
+    matcher: function(prop) {
+      return true; // This will be the fallback transform
+    },
+    transformer: function(prop) {
+      if (typeof prop.original.value === 'string') {
+        return prop.original.value;
+      }
+
+      const value = prop.original.value;
+      if (!value) return '';
+
+      // Handle both direct values and nested theme values
+      const propValue = value.light || value;
+
+      if (typeof propValue === 'string') {
+        return propValue;
+      }
+
+      // Handle objects with specific properties
+      if (propValue.value) {
+        return propValue.value;
+      }
+
+      // Handle arrays
+      if (Array.isArray(propValue)) {
+        return propValue.join(', ');
+      }
+
+      // Handle other objects
+      if (typeof propValue === 'object') {
+        return Object.values(propValue).join(', ');
+      }
+
+      return propValue;
+    }
+  });
+
+  // Transform groups
   StyleDictionary.registerTransformGroup({
     name: 'custom/css',
     transforms: [
       'name/custom',
-      'color/css-rgba',
-      'typography/css'
+      'typography/css',
+      'color/css',
+      'value/css'
     ]
   });
 
@@ -98,8 +132,9 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/scss',
     transforms: [
       'name/custom',
-      'color/css-rgba',
-      'typography/css'
+      'typography/css',
+      'color/css',
+      'value/css'
     ]
   });
 
@@ -107,11 +142,12 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/ts',
     transforms: [
       'name/custom',
-      'color/css-rgba',
-      'typography/css'
+      'typography/css',
+      'color/css',
+      'value/css'
     ]
   });
-};
+}
 
 module.exports = {
   registerTransforms

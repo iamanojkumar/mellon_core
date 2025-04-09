@@ -1,0 +1,35 @@
+﻿name,value,type,description,category,status,version,tags,platform,usage
+size.component.small,24px,size,Small component size for compact UI elements,size,stable,1.0.0,component size,web,Use for compact components and secondary UI elements
+size.component.medium,32px,size,Medium component size for standard UI elements,size,stable,1.0.0,component size,web,Use for standard components and primary UI elements
+size.component.large,48px,size,Large component size for prominent UI elements,size,stable,1.0.0,component size,web,Use for prominent components and featured UI elements
+size.component.xlarge,64px,size,Extra large component size for hero sections,size,stable,1.0.0,component size,web,Use for hero sections and featured components
+size.icon.tiny,16px,size,Tiny icon size for inline elements,size,stable,1.0.0,icon size,web,Use for inline icons and small UI elements
+size.icon.small,20px,size,Small icon size for action buttons,size,stable,1.0.0,icon size,web,Use for action buttons and navigation icons
+size.icon.medium,24px,size,Medium icon size for navigation,size,stable,1.0.0,icon size,web,Use for navigation icons and feature icons
+size.icon.large,32px,size,Large icon size for feature sections,size,stable,1.0.0,icon size,web,Use for feature icons and prominent UI elements
+size.icon.xlarge,48px,size,Extra large icon size for hero sections,size,stable,1.0.0,icon size,web,Use for hero section icons and featured elements
+size.avatar.tiny,24px,size,Tiny avatar size for comments,size,stable,1.0.0,avatar size,web,Use for comments and small user lists
+size.avatar.small,32px,size,Small avatar size for user lists,size,stable,1.0.0,avatar size,web,Use for user lists and compact profiles
+size.avatar.medium,48px,size,Medium avatar size for profiles,size,stable,1.0.0,avatar size,web,Use for user profiles and standard views
+size.avatar.large,64px,size,Large avatar size for featured profiles,size,stable,1.0.0,avatar size,web,Use for featured profiles and prominent views
+size.avatar.xlarge,96px,size,Extra large avatar size for hero sections,size,stable,1.0.0,avatar size,web,Use for hero section profiles and featured users
+size.button.small,24px,size,Small button size for secondary actions,size,stable,1.0.0,button size,web,Use for secondary actions and compact forms
+size.button.medium,32px,size,Medium button size for primary actions,size,stable,1.0.0,button size,web,Use for primary actions and standard forms
+size.button.large,40px,size,Large button size for important CTAs,size,stable,1.0.0,button size,web,Use for important CTAs and featured actions
+size.button.xlarge,48px,size,Extra large button size for hero sections,size,stable,1.0.0,button size,web,Use for hero section CTAs and prominent actions
+size.input.small,24px,size,Small input size for compact forms,size,stable,1.0.0,input size,web,Use for compact forms and secondary inputs
+size.input.medium,32px,size,Medium input size for standard forms,size,stable,1.0.0,input size,web,Use for standard forms and primary inputs
+size.input.large,40px,size,Large input size for search bars,size,stable,1.0.0,input size,web,Use for search bars and featured inputs
+size.input.xlarge,48px,size,Extra large input size for hero sections,size,stable,1.0.0,input size,web,Use for hero section search and prominent inputs
+size.container.small,320px,size,Small container size for sidebars,size,stable,1.0.0,container size,web,Use for sidebars and compact sections
+size.container.medium,640px,size,Medium container size for content areas,size,stable,1.0.0,container size,web,Use for content areas and standard sections
+size.container.large,960px,size,Large container size for main sections,size,stable,1.0.0,container size,web,Use for main sections and featured content
+size.container.xlarge,1280px,size,Extra large container size for full-width sections,size,stable,1.0.0,container size,web,Use for full-width sections and hero content
+size.thumbnail.small,64px,size,Small thumbnail size for gallery,size,stable,1.0.0,thumbnail size,web,Use for gallery thumbnails and small previews
+size.thumbnail.medium,96px,size,Medium thumbnail size for products,size,stable,1.0.0,thumbnail size,web,Use for product thumbnails and standard previews
+size.thumbnail.large,128px,size,Large thumbnail size for featured images,size,stable,1.0.0,thumbnail size,web,Use for featured images and prominent previews
+size.thumbnail.xlarge,192px,size,Extra large thumbnail size for hero images,size,stable,1.0.0,thumbnail size,web,Use for hero images and featured previews
+size.badge.small,16px,size,Small badge size for notification counts,size,stable,1.0.0,badge size,web,Use for notification counts and small indicators
+size.badge.medium,20px,size,Medium badge size for status indicators,size,stable,1.0.0,badge size,web,Use for status indicators and standard badges
+size.badge.large,24px,size,Large badge size for featured badges,size,stable,1.0.0,badge size,web,Use for featured badges and prominent indicators
+size.badge.xlarge,32px,size,Extra large badge size for promotional badges,size,stable,1.0.0,badge size,web,Use for promotional badges and hero indicators

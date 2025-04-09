@@ -1,0 +1,36 @@
+name,value,type,description,category,status,version,tags,platform,usage
+radius.component.small,4px,radius,Small radius for compact components,radius,active,1.0.0,component small,web,Buttons
+radius.component.medium,8px,radius,Medium radius for standard components,radius,active,1.0.0,component medium,web,Standard interactive elements and cards
+radius.component.large,12px,radius,Large radius for prominent components,radius,active,1.0.0,component large,web,Large interactive elements and containers
+radius.component.xlarge,16px,radius,Extra large radius for emphasis,radius,active,1.0.0,component xlarge,web,Featured components and sections
+radius.component.full,9999px,radius,Full radius for circular elements,radius,active,1.0.0,component full,web,Avatars
+radius.interactive.button,4px,radius,Radius for button elements,radius,active,1.0.0,interactive button,web,All button variants
+radius.interactive.input,4px,radius,Radius for input fields,radius,active,1.0.0,interactive input,web,Text inputs
+radius.interactive.card,8px,radius,Radius for card elements,radius,active,1.0.0,interactive card,web,Card components and containers
+radius.interactive.avatar,9999px,radius,Radius for avatar elements,radius,active,1.0.0,interactive avatar,web,User avatars and profile images
+radius.interactive.badge,4px,radius,Radius for badge elements,radius,active,1.0.0,interactive badge,web,Status badges and labels
+radius.container.small,8px,radius,Small radius for containers,radius,active,1.0.0,container small,web,Small content containers
+radius.container.medium,12px,radius,Medium radius for containers,radius,active,1.0.0,container medium,web,Standard content containers
+radius.container.large,16px,radius,Large radius for containers,radius,active,1.0.0,container large,web,Large content containers
+radius.container.xlarge,24px,radius,Extra large radius for containers,radius,active,1.0.0,container xlarge,web,Featured content containers
+radius.container.none,0px,radius,No radius for containers,radius,active,1.0.0,container none,web,Square containers and elements
+radius.surface.flat,0px,radius,No radius for flat surfaces,radius,active,1.0.0,surface flat,web,Flat UI elements and backgrounds
+radius.surface.raised,8px,radius,Radius for raised surfaces,radius,active,1.0.0,surface raised,web,Elevated UI elements
+radius.surface.floating,12px,radius,Radius for floating surfaces,radius,active,1.0.0,surface floating,web,Floating UI elements and modals
+radius.surface.overlay,16px,radius,Radius for overlay surfaces,radius,active,1.0.0,surface overlay,web,Overlay panels and dialogs
+radius.surface.card,8px,radius,Radius for card surfaces,radius,active,1.0.0,surface card,web,Card components and containers
+radius.content.image,4px,radius,Radius for images,radius,active,1.0.0,content image,web,Image elements and thumbnails
+radius.content.thumbnail,4px,radius,Radius for thumbnails,radius,active,1.0.0,content thumbnail,web,Thumbnail images and previews
+radius.content.icon,4px,radius,Radius for icons,radius,active,1.0.0,content icon,web,Icon containers and badges
+radius.content.avatar,9999px,radius,Radius for avatars,radius,active,1.0.0,content avatar,web,Avatar images and containers
+radius.content.badge,4px,radius,Radius for badges,radius,active,1.0.0,content badge,web,Badge elements and labels
+radius.state.default,4px,radius,Default state radius,radius,active,1.0.0,state default,web,Default state of interactive elements
+radius.state.hover,4px,radius,Hover state radius,radius,active,1.0.0,state hover,web,Hover state of interactive elements
+radius.state.focus,4px,radius,Focus state radius,radius,active,1.0.0,state focus,web,Focus state of interactive elements
+radius.state.active,4px,radius,Active state radius,radius,active,1.0.0,state active,web,Active state of interactive elements
+radius.state.disabled,4px,radius,Disabled state radius,radius,active,1.0.0,state disabled,web,Disabled state of interactive elements
+radius.layout.section,12px,radius,Radius for section layouts,radius,active,1.0.0,layout section,web,Section containers and groups
+radius.layout.container,8px,radius,Radius for container layouts,radius,active,1.0.0,layout container,web,Main container elements
+radius.layout.panel,8px,radius,Radius for panel layouts,radius,active,1.0.0,layout panel,web,Panel components and sections
+radius.layout.modal,16px,radius,Radius for modal layouts,radius,active,1.0.0,layout modal,web,Modal dialogs and popups
+radius.layout.sidebar,0px,radius,Radius for sidebar layouts,radius,active,1.0.0,layout sidebar,web,Sidebar navigation and panels

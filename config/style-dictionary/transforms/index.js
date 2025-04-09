@@ -22,6 +22,11 @@ const transforms = {
       if (['surface', 'text', 'interactive', 'border', 'status', 'background', 'overlay', 'shadow', 'gradient', 'chart', 'feedback', 'a11y'].includes(category)) {
         return `color-${path.join('-')}`;
       }
+
+      // Handle spacing tokens - keep the full path
+      if (category === 'spacing') {
+        return path.join('-');
+      }
       
       // Default case
       return path.join('-');
@@ -50,6 +55,16 @@ const transforms = {
         textDecoration: value.textDecoration || 'none',
         textTransform: value.textTransform || 'none'
       };
+    }
+  },
+  'spacing/css': {
+    type: 'value',
+    matcher: function(prop) {
+      return prop.attributes.category === 'spacing' || prop.type === 'spacing';
+    },
+    transformer: function(prop) {
+      // Return the spacing value directly
+      return prop.original.value;
     }
   },
   'color/css': {
@@ -127,6 +142,40 @@ function registerTransforms(dictionary) {
       name,
       ...transform
     });
+  });
+
+  // Register transform groups
+  dictionary.registerTransformGroup({
+    name: 'custom/css',
+    transforms: [
+      'name/cti/kebab',
+      'color/css',
+      'typography/css',
+      'spacing/css',
+      'value/css'
+    ]
+  });
+
+  dictionary.registerTransformGroup({
+    name: 'custom/scss',
+    transforms: [
+      'name/cti/kebab',
+      'color/css',
+      'typography/css',
+      'spacing/css',
+      'value/css'
+    ]
+  });
+
+  dictionary.registerTransformGroup({
+    name: 'custom/ts',
+    transforms: [
+      'name/cti/kebab',
+      'color/css',
+      'typography/css',
+      'spacing/css',
+      'value/css'
+    ]
   });
 }
 
