@@ -1,0 +1,33 @@
+name,value,type,description,category,status,usage,platform,version
+spacing.layout.small,8px,spacing,Small layout spacing for minor layout adjustments,spacing,active,Use for small layout gaps between minor elements,web,1.0.0
+spacing.layout.medium,16px,spacing,Medium layout spacing for standard layout gaps,spacing,active,Use for standard layout spacing between elements,web,1.0.0
+spacing.layout.large,24px,spacing,Large layout spacing for major layout gaps,spacing,active,Use for major layout spacing between sections,web,1.0.0
+spacing.layout.xlarge,32px,spacing,Extra large layout spacing for significant layout gaps,spacing,active,Use for significant layout spacing between major sections,web,1.0.0
+spacing.component.tight,4px,spacing,Tight component spacing for dense UIs,spacing,active,Use for compact component internal spacing,web,1.0.0
+spacing.component.normal,8px,spacing,Normal component spacing for standard UIs,spacing,active,Use for standard component internal spacing,web,1.0.0
+spacing.component.loose,12px,spacing,Loose component spacing for comfortable UIs,spacing,active,Use for comfortable component internal spacing,web,1.0.0
+spacing.component.xloose,16px,spacing,Extra loose component spacing for spacious UIs,spacing,active,Use for spacious component internal spacing,web,1.0.0
+spacing.content.tight,8px,spacing,Tight content spacing for dense content,spacing,active,Use for tight spacing between content elements,web,1.0.0
+spacing.content.normal,16px,spacing,Normal content spacing for standard content,spacing,active,Use for standard spacing between content elements,web,1.0.0
+spacing.content.loose,24px,spacing,Loose content spacing for comfortable reading,spacing,active,Use for comfortable spacing between content elements,web,1.0.0
+spacing.content.xloose,32px,spacing,Extra loose content spacing for enhanced readability,spacing,active,Use for enhanced readability between content elements,web,1.0.0
+spacing.section.small,24px,spacing,Small section spacing for minor sections,spacing,active,Use for spacing between minor sections,web,1.0.0
+spacing.section.medium,48px,spacing,Medium section spacing for standard sections,spacing,active,Use for spacing between standard sections,web,1.0.0
+spacing.section.large,64px,spacing,Large section spacing for major sections,spacing,active,Use for spacing between major sections,web,1.0.0
+spacing.section.xlarge,96px,spacing,Extra large section spacing for key sections,spacing,active,Use for spacing between key sections,web,1.0.0
+spacing.stack.tight,4px,spacing,Tight vertical stack spacing,spacing,active,Use for tight vertical spacing between stacked elements,web,1.0.0
+spacing.stack.normal,8px,spacing,Normal vertical stack spacing,spacing,active,Use for standard vertical spacing between stacked elements,web,1.0.0
+spacing.stack.loose,16px,spacing,Loose vertical stack spacing,spacing,active,Use for comfortable vertical spacing between stacked elements,web,1.0.0
+spacing.stack.xloose,24px,spacing,Extra loose vertical stack spacing,spacing,active,Use for spacious vertical spacing between stacked elements,web,1.0.0
+spacing.inline.tight,4px,spacing,Tight horizontal inline spacing,spacing,active,Use for tight horizontal spacing between inline elements,web,1.0.0
+spacing.inline.normal,8px,spacing,Normal horizontal inline spacing,spacing,active,Use for standard horizontal spacing between inline elements,web,1.0.0
+spacing.inline.loose,16px,spacing,Loose horizontal inline spacing,spacing,active,Use for comfortable horizontal spacing between inline elements,web,1.0.0
+spacing.inline.xloose,24px,spacing,Extra loose horizontal inline spacing,spacing,active,Use for spacious horizontal spacing between inline elements,web,1.0.0
+spacing.container.tight,16px,spacing,Tight container padding,spacing,active,Use for tight container padding in dense layouts,web,1.0.0
+spacing.container.normal,24px,spacing,Normal container padding,spacing,active,Use for standard container padding,web,1.0.0
+spacing.container.loose,32px,spacing,Loose container padding,spacing,active,Use for comfortable container padding,web,1.0.0
+spacing.container.xloose,48px,spacing,Extra loose container padding,spacing,active,Use for spacious container padding,web,1.0.0
+spacing.grid.tight,8px,spacing,Tight grid gap spacing,spacing,active,Use for tight grid gaps in dense layouts,web,1.0.0
+spacing.grid.normal,16px,spacing,Normal grid gap spacing,spacing,active,Use for standard grid gaps,web,1.0.0
+spacing.grid.loose,24px,spacing,Loose grid gap spacing,spacing,active,Use for comfortable grid gaps,web,1.0.0
+spacing.grid.xloose,32px,spacing,Extra loose grid gap spacing,spacing,active,Use for spacious grid gaps,web,1.0.0

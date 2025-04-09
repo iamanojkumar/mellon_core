@@ -16,13 +16,7 @@ const normalizeColor = (value) => {
     return value.trim();
   }
   if (isHex(value)) {
-    // Convert hex to rgba
-    const hex = value.replace('#', '');
-    const r = parseInt(hex.substring(0, 2), 16);
-    const g = parseInt(hex.substring(2, 4), 16);
-    const b = parseInt(hex.substring(4, 6), 16);
-    const a = hex.length === 8 ? parseInt(hex.substring(6, 8), 16) / 255 : 1;
-    return `rgba(${r}, ${g}, ${b}, ${a})`;
+    return value;
   }
   return value;
 };
@@ -62,7 +56,7 @@ const registerTransforms = (StyleDictionary) => {
   });
 
   StyleDictionary.registerTransform({
-    name: 'color/css-rgba',
+    name: 'color/css',
     type: 'value',
     matcher: (token) => {
       return token.category === 'color' && token.value && (token.value.light || token.value.dark);
@@ -89,7 +83,7 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/css',
     transforms: [
       'name/custom',
-      'color/css-rgba',
+      'color/css',
       'typography/css'
     ]
   });
@@ -98,7 +92,7 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/scss',
     transforms: [
       'name/custom',
-      'color/css-rgba',
+      'color/css',
       'typography/css'
     ]
   });
@@ -107,7 +101,7 @@ const registerTransforms = (StyleDictionary) => {
     name: 'custom/ts',
     transforms: [
       'name/custom',
-      'color/css-rgba',
+      'color/css',
       'typography/css'
     ]
   });
