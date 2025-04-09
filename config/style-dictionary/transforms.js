@@ -24,7 +24,7 @@ const normalizeColor = (value) => {
 // Helper function to normalize token name
 const normalizeTokenName = (path) => {
   // Remove any 'typography.' or 'color.' prefix from the path
-  const cleanPath = path.map(part => part.replace(/^(typography\.|color\.)/, ''));
+  const cleanPath = path.map(part => part.replace(/^(typography\.|color\.|size\.)/, ''));
   // Flatten nested paths by joining all components with hyphens
   return cleanPath.join('-');
 };
@@ -59,12 +59,15 @@ const registerTransforms = (StyleDictionary) => {
     name: 'color/css',
     type: 'value',
     matcher: (token) => {
-      return token.category === 'color' && token.value && (token.value.light || token.value.dark);
+      return token.category === 'color' && token.value;
     },
     transformer: (token) => {
-      const light = normalizeColor(token.value.light);
-      const dark = normalizeColor(token.value.dark || token.value.light);
-      return { light, dark };
+      if (typeof token.value === 'object') {
+        const light = token.value.light;
+        const dark = token.value.dark || token.value.light;
+        return { light, dark };
+      }
+      return token.value;
     }
   });
 
@@ -79,12 +82,24 @@ const registerTransforms = (StyleDictionary) => {
     }
   });
 
+  StyleDictionary.registerTransform({
+    name: 'size/css',
+    type: 'value',
+    matcher: (token) => {
+      return token.type === 'size';
+    },
+    transformer: (token) => {
+      return token.value;
+    }
+  });
+
   StyleDictionary.registerTransformGroup({
     name: 'custom/css',
     transforms: [
       'name/custom',
       'color/css',
-      'typography/css'
+      'typography/css',
+      'size/css'
     ]
   });
 
@@ -93,7 +108,8 @@ const registerTransforms = (StyleDictionary) => {
     transforms: [
       'name/custom',
       'color/css',
-      'typography/css'
+      'typography/css',
+      'size/css'
     ]
   });
 
@@ -102,7 +118,8 @@ const registerTransforms = (StyleDictionary) => {
     transforms: [
       'name/custom',
       'color/css',
-      'typography/css'
+      'typography/css',
+      'size/css'
     ]
   });
 };
